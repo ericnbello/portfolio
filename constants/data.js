@@ -8,6 +8,12 @@ const userData = {
   address: "Miami, FL",
   projects: [
     {
+      title: "Planet Facts",
+      link: "https://planet-facts-ericnbello.netlify.app/",
+      imgUrl: "/planet-facts-screenshot.png",
+      description: 'Technologies used: React, TailwindCSS, React Router 6, Netlify'
+    },
+    {
       title: "Cofferoasters Subscription",
       link: "https://coffeeroasters-subscription.vercel.app/",
       imgUrl: "/coffeeroasters-subscription-screenshot-mockup.png",

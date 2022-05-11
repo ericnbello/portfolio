@@ -36,13 +36,13 @@ export default function FavoriteProjects() {
         <div className="grid md:grid-cols-3 gap-8 lg:-mt-8 pb-40">
           {/* Single card */}
           <a
-            href="https://coffeeroasters-subscription.vercel.app/"
+            href={userData.projects[0].link}
             className="w-full block col-span-3 shadow-2xl max-h-[600px] overflow-hidden"
           >
             <div className="relative overflow-hidden">
               <img
-                src="/coffeeroasters-subscription-screenshot-mockup.png"
-                alt="portfolio"
+                src={userData.projects[0].imgUrl}
+                alt="portfolio project screenshot"
                 className="transform hover:scale-125 transition duration-2000 ease-out"
               />
               <h1 className="absolute top-10 left-10 text-gray-50 font-bold text-xl bg-red-500 rounded-md px-2">
@@ -56,13 +56,13 @@ export default function FavoriteProjects() {
           </a>
           {/* Single card */}
           <a
-            href="https://weather-forecast-ericnbello.herokuapp.com/"
+            href={userData.projects[1].link}
             className="w-full block col-span-3 sm:col-span-2 sm:row-span-1 object-cover"
           >
             <div className="relative overflow-hidden shadow-2xl">
               <img
-                src="/weather-app-django-preview-mockup.png"
-                alt="portfolio"
+                src={userData.projects[1].imgUrl}
+                alt="portfolio project screenshot"
                 className="transform hover:scale-125 transition duration-2000 ease-out"
               />
               <h1 className="absolute top-10 left-10 text-gray-50 font-bold text-xl bg-red-500 rounded-md px-2">
@@ -75,16 +75,17 @@ export default function FavoriteProjects() {
             {/* <p>{userData.projects[1].description}</p> */}
           </a>
           {/* <div className="block sm:flex sm:flex-col sm:justify-between"> */}
+
           {/* Single card */}
           <a
-            href="https://etch-a-sketch-ericnbello.netlify.app/"
+            href={userData.projects[2].link}
             className="w-full block col-span-3 sm:col-span-1 object-cover "
           >
             <div className="relative overflow-hidden shadow-2xl">
               {/* <div className="overlay absolute inset-0 bg-black bg-opacity-70 z-10"></div> */}
               <img
-                src="/etch-a-sketch-screenshot-mockup2.png"
-                alt="portfolio"
+                src={userData.projects[2].imgUrl}
+                alt="portfolio project screenshot"
                 className="transform hover:scale-125 transition duration-2000 ease-out"
               />
               <h1 className="absolute top-10 left-10 text-gray-50 font-bold text-xl bg-red-500 rounded-md px-2">
