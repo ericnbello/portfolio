@@ -8,6 +8,12 @@ const userData = {
   address: "Miami, FL",
   projects: [
     {
+      title: "Arch Studio",
+      link: "https://arch-studio-ericnbello.vercel.app/",
+      imgUrl: "/arch-studio-screenshot.png",
+      description: 'Technologies used: Next.js, TailwindCSS, Vercel'
+    },
+    {
       title: "Planet Facts",
       link: "https://planet-facts-ericnbello.netlify.app/",
       imgUrl: "/planet-facts-screenshot.png",
