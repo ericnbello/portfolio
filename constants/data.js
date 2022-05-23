@@ -8,6 +8,12 @@ const userData = {
   address: "Miami, FL",
   projects: [
     {
+      title: "Entertainment Web App",
+      link: "https://streaming-web-app.firebaseapp.com/",
+      imgUrl: "/entertainment-web-app-screenshot.png",
+      description: 'Technologies used: React, TailwindCSS, React Router 6, Firebase'
+    },
+    {
       title: "Arch Studio",
       link: "https://arch-studio-ericnbello.vercel.app/",
       imgUrl: "/arch-studio-screenshot.png",
