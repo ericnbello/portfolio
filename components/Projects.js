@@ -1,7 +1,30 @@
-import React from "react";
+import React, { useState, useSWR } from "react";
 import userData from "@constants/data";
 
+function paginator(items, current_page, per_page_items) {
+	let page = current_page || 1,
+	per_page = per_page_items || 10,
+	offset = (page - 1) * per_page,
+
+	paginatedItems = items.slice(offset).slice(0, per_page_items),
+	total_pages = Math.ceil(items.length / per_page);
+
+  return {
+		page: page,
+		per_page: per_page,
+		pre_page: page - 1 ? page - 1 : null,
+		next_page: (total_pages > page) ? page + 1 : null,
+		total: items.length,
+		total_pages: total_pages,
+		data: paginatedItems
+	};
+}
+
 export default function Projects() {
+  const [pageIndex, setPageIndex] = useState(0);
+
+  paginator(userData.projects, 1, 6);
+
   return (
     <section className="bg-white dark:bg-gray-800">
       <div className="max-w-6xl mx-auto h-48 bg-white dark:bg-gray-800">
@@ -22,6 +45,10 @@ export default function Projects() {
             />
           ))}
         </div>
+        {/* <div className="flex justify-center">
+          <button className="font-bold" onClick={() => setPageIndex(pageIndex - 1)}>Previous</button>
+          <button className="font-bold" onClick={() => setPageIndex(pageIndex + 1)}>Next</button>
+        </div> */}
       </div>
     </section>
   );
@@ -48,9 +75,9 @@ const ProjectCard = ({ title, link, imgUrl, number, description }) => {
           </h1>
         </div>
       </a>
-      <div>
+      {/* <div>
         <p className="font-bold p-2">{description}</p>
-      </div>
+      </div> */}
     </div>
     </>
   );

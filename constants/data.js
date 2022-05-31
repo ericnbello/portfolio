@@ -1,7 +1,7 @@
 const userData = {
   githubUsername: "ericnbello",
   name: "Eric Bello",
-  designation: "Software Developer",
+  designation: "Front End Developer",
   avatarUrl: "/avatar.png",
   email: "ericnbello@gmail.com",
   phone: "",
@@ -75,9 +75,9 @@ const userData = {
   },
   experience: [
     {
-      title: "Software Developer",
-      company: " ",
-      year: " ",
+      title: "Web Developer",
+      company: "",
+      year: "2022",
       companyLink: " ",
       desc: " ",
     },
