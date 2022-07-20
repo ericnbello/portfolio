@@ -8,6 +8,18 @@ const userData = {
   address: "Miami, FL",
   projects: [
     {
+      title: "Spa Reservation System",
+      link: "https://spa-reservations.herokuapp.com/",
+      imgUrl: "/spa-reservations-screenshot.png",
+      description: 'Technologies used: Java, Spring Boot, TailwindCSS, Thymeleaf, Heroku'
+    },
+    {
+      title: "Weather Forecast",
+      link: "https://weather-forecast-ericnbello.herokuapp.com/",
+      imgUrl: "/weather-app-django-preview-mockup.png",
+      description: 'Technologies used: Python, Django, TailwindCSS, JavaScript, API, Heroku'
+    },
+    {
       title: "Entertainment Web App",
       link: "https://streaming-web-app.firebaseapp.com/",
       imgUrl: "/entertainment-web-app-screenshot.png",
@@ -30,12 +42,6 @@ const userData = {
       link: "https://coffeeroasters-subscription.vercel.app/",
       imgUrl: "/coffeeroasters-subscription-screenshot-mockup.png",
       description: 'Technologies used: Next.js, TailwindCSS, Supabase, Stripe, Vercel'
-    },
-    {
-      title: "Weather Forecast",
-      link: "https://weather-forecast-ericnbello.herokuapp.com/",
-      imgUrl: "/weather-app-django-preview-mockup.png",
-      description: 'Technologies used: Python, Django, TailwindCSS, JavaScript, API, Heroku'
     },
     {
       title: "Etch-a-sketch",
