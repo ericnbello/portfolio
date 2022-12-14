@@ -56,6 +56,7 @@ export default function Footer() {
               <LinkedIn />
             </a>
           </div>
+          <div className="border-2 outline border-yellow-300"></div>
         </div>
       </div>
     </div>
