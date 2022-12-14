@@ -15,8 +15,6 @@ jobs:
       - run: npm install
       - run: npm ci
       - run: npm run build
-        with:
-          
       - uses: aws-actions/configure-aws-credentials@v1
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
