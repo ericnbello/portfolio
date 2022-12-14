@@ -1,7 +1,7 @@
 import { useForm, ValidationError } from "@formspree/react";
 
 export default function ContactForm() {
-  const [state, handleSubmit] = useForm(process.env.NEXT_PUBLIC_FORM);
+  const [state, handleSubmit] = useForm("mayvjonp");
 
   if (state.succeeded) {
     return <p className="text-white">Thanks for your submission!</p>;
