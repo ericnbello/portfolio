@@ -1,0 +1,51 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: 'AWS::Serverless-2016-10-31'
+Description: Backend for site view counter
+
+Globals:
+  #https://github.com/awslabs/serverless-application-model/blob/develop/docs/globals.rst
+  Function:
+    Runtime: python3.9
+    MemorySize: 128
+     
+Resources:
+  ResumeFunction:
+    Type: 'AWS::Serverless::Function'
+    Properties:
+      
+      FunctionName: get-count
+      CodeUri: ./
+      Handler: src/handlers/lambda_function.lambda_handler
+      Description: Backend for site view counter
+      Timeout: 3
+      Policies:
+        - DynamoDBCrudPolicy:
+            TableName: !Ref portfolio-visiter-counter
+      Events:
+        ResumeViews:
+          Type: Api
+          Properties:
+            RestApiId: !Ref count-API
+            Path: /get-count
+            Method: get
+        
+            
+  ResumeViewCountApi:
+    Type: AWS::Serverless::Api
+    Properties:
+      Cors:
+        AllowOrigin: "'https://ericnbello.com'"
+      EndpointConfiguration: Regional
+      OpenApiVersion: 3.0.1
+      StageName: prod
+      
+  CounterTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      AttributeDefinitions: 
+        - AttributeName: Quantity
+          AttributeType: N
+      KeySchema: 
+        - AttributeName: Quantity
+          KeyType: HASH
+      TableName: portfolio-visiter-counter

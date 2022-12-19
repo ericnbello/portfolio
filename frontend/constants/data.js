@@ -9,9 +9,9 @@ const userData = {
   projects: [
     {
       title: "Spa Reservation System",
-      link: "https://spa-reservations.herokuapp.com/",
+      link: "https://doc5gzxrvp9he.cloudfront.net/reservation-system-0.0.1-SNAPSHOT/",
       imgUrl: "/spa-reservations-screenshot.png",
-      description: 'Technologies used: Java, Spring Boot, TailwindCSS, Thymeleaf, Heroku'
+      description: 'Technologies used: AWS, Java, Spring Boot, Tailwind CSS, Thymeleaf'
     },
     {
       title: "Weather Forecast",
@@ -27,9 +27,9 @@ const userData = {
     },
     {
       title: "Arch Studio",
-      link: "https://arch-studio-ericnbello.vercel.app/",
+      link: "https://d35spakm21gfpt.cloudfront.net",
       imgUrl: "/arch-studio-screenshot.png",
-      description: 'Technologies used: Next.js, TailwindCSS, Vercel'
+      description: 'Technologies used: AWS, Next.js, Tailwind CSS'
     },
     {
       title: "Planet Facts",
