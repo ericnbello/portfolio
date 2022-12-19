@@ -26,7 +26,7 @@ export default function VisitorCounter() {
             setCount(data);
         }
         getCount();
-    }, [fetch]); // Or [] if effect doesn't need props or state
+    }, []); // Or [] if effect doesn't need props or state
 
     return (
         <div className="border-2 outline px-4">
