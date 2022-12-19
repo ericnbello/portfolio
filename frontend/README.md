@@ -1,8 +1,8 @@
-# My Developer Portfolio
+# My Portfolio
 
-A simple and minimalistic website showcasing my skills and projects as a developer.
+A simple and minimalistic website showcasing my skills and projects.
 
-![Hompage](public/portfolio-mockup.png)
+<!-- ![Hompage](public/portfolio-mockup.png) -->
 
 # Features
 
@@ -10,11 +10,10 @@ A simple and minimalistic website showcasing my skills and projects as a develop
 - Dark mode support. Click buttons to toggle dark mode and light mode.
 - Clear React components and Tailwind styling.
 
-# Tech Stack
-
-The website is built in my favorite Tech Stack and deployed on [Vercel](https://vercel.com)
-
+# Services used
+ 
+- AWS CloudFront and S3
 - [Next.js](https://nextjs.org) for building React Components.
 - [tailwindcss](https://tailwindcss.com) for styling.
 - [React Rough Notation](https://roughnotation.com) for Hero section highlighting.
-- [Vercel](https://vercel.com) for deployments and CI/CD.
+- CI/CD through GitHub Actions & Workflows
