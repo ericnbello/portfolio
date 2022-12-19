@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
-import getLatestRepos from "@lib/getLatestRepos";
+import getLatestRepos from "../lib/getLatestRepos.js";
 import userData from "@constants/data";
 
 export default function LatestCode({ repositories }) {
