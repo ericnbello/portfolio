@@ -1,7 +1,6 @@
 name: CD
 
 on:
-  working-directory: ./frontend
   push:
     branches: main
     paths: frontend/**
