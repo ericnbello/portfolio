@@ -49,3 +49,4 @@ Resources:
         - AttributeName: siteviews
           KeyType: HASH
       TableName: countertable
+      BillingMode: PAY_PER_REQUEST

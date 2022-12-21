@@ -1,10 +1,8 @@
 import React, { useEffect, useState } from "react"
-import countapi from 'countapi-js';
 // import { set } from "cypress/types/lodash";
-import axios from "axios";
 
 export default function VisitorCounter() {
-    const COUNT_API = `https://yyvxz8s5e2.execute-api.us-east-1.amazonaws.com/prod/get-count`;
+    const COUNT_API = `https://f7q7schsvi.execute-api.us-east-1.amazonaws.com/Prod/counter`;
 
     const [count, setCount] = useState();    
 
