@@ -3,9 +3,11 @@ name: CD
 on:
   push:
     branches: main
-    paths: 'frontend/**'
+    paths: frontend/**
 
 defaults:
+  build:
+    working-directory: frontend
   run:
     working-directory: frontend
 
