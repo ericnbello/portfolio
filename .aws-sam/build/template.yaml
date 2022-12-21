@@ -10,7 +10,7 @@ Resources:
     Type: AWS::Serverless::Function
     Properties:
       FunctionName: ResumeFunction
-      CodeUri: ResumeFunction
+      CodeUri: ./
       Handler: lambda_function.lambda_handler
       Description: Backend for site view counter
       Timeout: 3
