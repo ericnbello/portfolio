@@ -5,20 +5,19 @@ on:
     branches: main
     paths: frontend/**
 
-defaults:
-  build:
-    working-directory: frontend
-  run:
-    working-directory: frontend
-
 jobs:
   build:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./frontend/
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
+      - uses: actions/setup-node@v2
         with:
           node-version: 16
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json`
       - run: npm install
       - run: npm ci
       - run: npm run build
