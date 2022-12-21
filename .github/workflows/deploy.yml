@@ -27,5 +27,5 @@ jobs:
       
       - uses: actions/setup-python@v3
       - uses: aws-actions/setup-sam@v2
-      - run: sam build
+      - run: sam build --use-container
       - run: sam deploy --no-confirm-changeset --no-fail-on-empty-changeset
