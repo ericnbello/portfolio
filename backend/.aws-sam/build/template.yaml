@@ -3,7 +3,7 @@ Transform: AWS::Serverless-2016-10-31
 Description: Backend for site view counter
 Globals:
   Function:
-    Runtime: python3.8
+    Runtime: python3.9
     MemorySize: 128
 Resources:
   ResumeFunction:
@@ -17,7 +17,7 @@ Resources:
       Policies:
       - DynamoDBCrudPolicy:
           TableName:
-            Ref: CounterTable
+            Ref: CounterTable2
       Events:
         ResumeViews:
           Type: Api
@@ -42,8 +42,14 @@ Resources:
       AttributeDefinitions:
       - AttributeName: siteviews
         AttributeType: S
+      - AttributeName: Quantity
+        AttributeType: N
       KeySchema:
       - AttributeName: siteviews
         KeyType: HASH
-      TableName: countertable
-      BillingMode: PAY_PER_REQUEST
+      - AttributeName: Quantity
+        KeyType: N
+      TableName: countertable2
+      ProvisionedThroughput:
+        ReadCapacityUnits: 5
+        WriteCapacityUnits: 5

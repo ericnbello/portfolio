@@ -5,7 +5,7 @@ Description: Backend for site view counter
 Globals:
   #https://github.com/awslabs/serverless-application-model/blob/develop/docs/globals.rst
   Function:
-    Runtime: python3.8
+    Runtime: python3.9
     MemorySize: 128
      
 Resources:
@@ -20,7 +20,7 @@ Resources:
       Timeout: 3
       Policies:
         - DynamoDBCrudPolicy:
-            TableName: !Ref CounterTable
+            TableName: !Ref CounterTable2
       Events:
         ResumeViews:
           Type: Api
@@ -44,9 +44,15 @@ Resources:
     Properties:
       AttributeDefinitions: 
         - AttributeName: siteviews
-          AttributeType: S
+          AttributeType: 'S'
+        - AttributeName: Quantity
+          AttributeType: 'N'
       KeySchema: 
         - AttributeName: siteviews
           KeyType: HASH
-      TableName: countertable
-      BillingMode: PAY_PER_REQUEST
+        - AttributeName: Quantity
+          KeyType: 'N'
+      TableName: countertable2
+      ProvisionedThroughput:
+        ReadCapacityUnits: 5
+        WriteCapacityUnits: 5
