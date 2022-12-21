@@ -15,12 +15,14 @@ Resources:
       
       FunctionName: ResumeFunction
       CodeUri: ./
-      Handler: /src/handlers/lambda_function.lambda_handler
+      Handler: lambda_function.lambda_handler
       Description: Backend for site view counter
       Timeout: 3
       Policies:
         - DynamoDBCrudPolicy:
             TableName: !Ref CounterTable
+        # Give the Lambda service access to poll your DynamoDB Stream
+        - AmazonDynamoDBFullAccess
       Events:
         ResumeViews:
           Type: Api
