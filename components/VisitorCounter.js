@@ -1,31 +1,16 @@
 import React, { useEffect, useState } from "react"
-import XMLHttpRequest from 'xhr2';
+// import { set } from "cypress/types/lodash";
 
 export default function VisitorCounter() {
-    const COUNT_API = `https://6gl89wftdk.execute-api.us-east-1.amazonaws.com/Prod/counter`;
+    // const COUNT_API = `https://6gl89wftdk.execute-api.us-east-1.amazonaws.com/Prod/counter`;
 
     const [count, setCount] = useState();    
 
-    // const XMLHttpRequest = require('xhr2');
-    const xhr = new XMLHttpRequest();
-
-    xhr.open('GET', `${COUNT_API}`, true);
-
-    xhr.onload = function () {
-      if (xhr.readyState === xhr.DONE) {
-        if (xhr.status === 200) {
-          setCount(xhr.responseText);
-
-        }
-      }
-    };
-
-    xhr.send(null);
 
     useEffect(() => {
         async function getCount() {
             // You can await here
-            const response = await axios(`${COUNT_API}`);
+            const response = await fetch('https://6gl89wftdk.execute-api.us-east-1.amazonaws.com/Prod/counter');
             const data = await response.json();
             console.log(data)
             setCount(data);

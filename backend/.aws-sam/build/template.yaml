@@ -11,7 +11,7 @@ Resources:
     Properties:
       FunctionName: ResumeFunction
       CodeUri: ResumeFunction
-      Handler: src/handlers/lambda_function.lambda_handler
+      Handler: /src/handlers/lambda_function.lambda_handler
       Description: Backend for site view counter
       Timeout: 3
       Policies:
