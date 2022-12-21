@@ -30,7 +30,7 @@ def lambda_handler(event, context):
     data = client.get_item(
         TableName='countertable',
         Key = {
-            'siteviews': {'N': '0'}
+            'Quantity': {'N': '0'}
         }
     )
     
@@ -39,19 +39,19 @@ def lambda_handler(event, context):
     response = client.update_item(
         TableName='countertable',
         Key = {
-            'siteviews': {'N': '0'}
+            'Quantity': {'N': '0'}
         },
-        UpdateExpression = 'ADD Quantity :inc',
+        UpdateExpression = 'ADD count :inc',
         ExpressionAttributeValues = {":inc" : {"N": "1"}},
         ReturnValues = 'UPDATED_NEW'
         )
         
-    value = response['Attributes']['Quantity']['N']
+    value = response['Attributes']['count']['N']
     
     return {      
         'statusCode': 200,
         'headers': {
-            'Access-Control-Allow-Origin': '*',
+            'Access-Control-Allow-Origin': 'https://ericnbello.com',
             'Access-Control-Allow-Headers': 'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token',
             'Access-Control-Allow-Credentials': 'true',
             'Content-Type': 'application/json'
