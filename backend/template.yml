@@ -34,7 +34,7 @@ Resources:
     Type: AWS::Serverless::Api
     Properties:
       Cors:
-        AllowOrigin: "'https://ericnbello.com'"
+        AllowOrigin: "https://ericnbello.com"
       EndpointConfiguration: Regional
       OpenApiVersion: 3.0.1
       StageName: Prod
@@ -43,10 +43,10 @@ Resources:
     Type: AWS::DynamoDB::Table
     Properties:
       AttributeDefinitions: 
-        - AttributeName: siteviews
-          AttributeType: S
+        - AttributeName: Quantity
+          AttributeType: N
       KeySchema: 
-        - AttributeName: siteviews
+        - AttributeName: count
           KeyType: HASH
       TableName: countertable
       BillingMode: PAY_PER_REQUEST
