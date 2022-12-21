@@ -2,10 +2,10 @@
 
 [function_build_definitions]
 [function_build_definitions.04bbd259-78f1-46be-93b2-6f13837e8204]
-codeuri = "/Users/ericbello/projects/portfolio/backend"
+codeuri = "/Users/ericbello/projects/portfolio/"
 runtime = "python3.9"
 architecture = "x86_64"
-handler = "src/handlers/lambda_function.lambda_handler"
+handler = "lambda_function.lambda_handler"
 manifest_hash = ""
 packagetype = "Zip"
 functions = ["ResumeFunction"]
