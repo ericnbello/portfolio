@@ -16,7 +16,8 @@
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-rough-notation": "^1.0.1",
-    "xhr": "^2.6.0"
+    "xhr": "^2.6.0",
+    "xhr2": "^0.2.1"
   },
   "devDependencies": {
     "autoprefixer": "^10.3.1",

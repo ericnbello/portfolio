@@ -2629,6 +2629,11 @@
     "parse-headers" "^2.0.0"
     "xtend" "^4.0.0"
 
+"xhr2@^0.2.1":
+  "integrity" "sha512-sID0rrVCqkVNUn8t6xuv9+6FViXjUVXq8H5rWOH2rz9fDNQEd4g0EA2XlcEdJXRz5BMEn4O1pJFdT+z4YHhoWw=="
+  "resolved" "https://registry.npmjs.org/xhr2/-/xhr2-0.2.1.tgz"
+  "version" "0.2.1"
+
 "xtend@^4.0.0", "xtend@^4.0.2":
   "integrity" "sha512-LKYU1iAXJXUgAXn9URjiu+MWhyUXHsvfp7mcuYm9dSUKK0/CjtrUwFAxD82/mCWbtLsGjFIad0wIsod4zrTAEQ=="
   "resolved" "https://registry.npmjs.org/xtend/-/xtend-4.0.2.tgz"
