@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react"
-import axios from "axios";
+
 export default function VisitorCounter() {
     const COUNT_API = `https://6gl89wftdk.execute-api.us-east-1.amazonaws.com/Prod/counter`;
 
