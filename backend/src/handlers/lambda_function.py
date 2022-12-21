@@ -30,7 +30,7 @@ def lambda_handler(event, context):
     data = client.get_item(
         TableName='countertable',
         Key = {
-            'siteviews': {'S': '0'}
+            'siteviews': {'N': '0'}
         }
     )
     
@@ -39,7 +39,7 @@ def lambda_handler(event, context):
     response = client.update_item(
         TableName='countertable',
         Key = {
-            'siteviews': {'S': '0'}
+            'siteviews': {'N': '0'}
         },
         UpdateExpression = 'ADD Quantity :inc',
         ExpressionAttributeValues = {":inc" : {"N": "1"}},

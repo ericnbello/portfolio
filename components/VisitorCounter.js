@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react"
 // import { set } from "cypress/types/lodash";
 
 export default function VisitorCounter() {
-    const COUNT_API = `https://f7q7schsvi.execute-api.us-east-1.amazonaws.com/Prod/counter`;
+    const COUNT_API = `https://6gl89wftdk.execute-api.us-east-1.amazonaws.com/Prod`;
 
     const [count, setCount] = useState();    
 

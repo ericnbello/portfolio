@@ -17,7 +17,7 @@ Resources:
       Policies:
       - DynamoDBCrudPolicy:
           TableName:
-            Ref: CounterTable2
+            Ref: CounterTable
       Events:
         ResumeViews:
           Type: Api
@@ -41,15 +41,15 @@ Resources:
     Properties:
       AttributeDefinitions:
       - AttributeName: siteviews
-        AttributeType: S
+        AttributeType: N
       - AttributeName: Quantity
         AttributeType: N
       KeySchema:
       - AttributeName: siteviews
         KeyType: HASH
       - AttributeName: Quantity
-        KeyType: N
-      TableName: countertable2
+        KeyType: RANGE
+      TableName: countertable
       ProvisionedThroughput:
         ReadCapacityUnits: 5
         WriteCapacityUnits: 5
