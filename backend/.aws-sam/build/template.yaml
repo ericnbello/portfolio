@@ -17,7 +17,7 @@ Resources:
       Policies:
       - DynamoDBCrudPolicy:
           TableName:
-            Ref: CounterTable
+            Ref: CounterTable2
       - AmazonDynamoDBFullAccess
       Events:
         ResumeViews:
@@ -33,24 +33,19 @@ Resources:
     Type: AWS::Serverless::Api
     Properties:
       Cors:
-        AllowOrigin: '''https://ericnbello.com'''
+        AllowMethods: '''GET'''
+        AllowOrigin: '''www.ericnbello.com'''
       EndpointConfiguration: Regional
       OpenApiVersion: 3.0.1
       StageName: Prod
-  CounterTable:
+  CounterTable2:
     Type: AWS::DynamoDB::Table
     Properties:
       AttributeDefinitions:
       - AttributeName: siteviews
         AttributeType: N
-      - AttributeName: Quantity
-        AttributeType: N
+      BillingMode: PAY_PER_REQUEST
       KeySchema:
       - AttributeName: siteviews
         KeyType: HASH
-      - AttributeName: Quantity
-        KeyType: RANGE
-      TableName: countertable
-      ProvisionedThroughput:
-        ReadCapacityUnits: 5
-        WriteCapacityUnits: 5
+      TableName: countertable2

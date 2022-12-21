@@ -23,23 +23,23 @@ def replace_decimals(obj):
         
 def lambda_handler(event, context):
     
-    table = dynamodb.Table('countertable')
+    table = dynamodb.Table('countertable2')
     body = table.scan()
     items = replace_decimals(body['Items'])
     
-    data = client.get_item(
-        TableName='countertable',
-        Key = {
-            'siteviews': {'N': '0'}
-        }
-    )
+    # data = client.get_item(
+    #     TableName='countertable',
+    #     Key = {
+    #         'siteviews': {'N': '0'}
+    #     }
+    # )
     
     #data['Item']['Quantity']['N'] = str(int(data['Item']['Quantity']['N']) + 1)
     
     response = client.update_item(
-        TableName='countertable',
+        TableName='countertable2',
         Key = {
-            'siteviews': {'N': '0'}
+            'siteviews': {'N': '0'},
         },
         UpdateExpression = 'ADD Quantity :inc',
         ExpressionAttributeValues = {":inc" : {"N": "1"}},
@@ -51,7 +51,7 @@ def lambda_handler(event, context):
     return {      
         'statusCode': 200,
         'headers': {
-            'Access-Control-Allow-Origin': '*',
+            'Access-Control-Allow-Origin': 'https://www.ericnbello.com',
             'Access-Control-Allow-Headers': 'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token',
             'Access-Control-Allow-Credentials': 'true',
             'Content-Type': 'application/json'
