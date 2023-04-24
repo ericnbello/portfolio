@@ -1,5 +1,7 @@
 import React, { useState, useSWR } from "react";
 import userData from "@constants/data";
+import Project from "pages/projects/[pid]";
+import Link from "next/dist/client/link";
 
 function paginator(items, current_page, per_page_items) {
 	let page = current_page || 1,
@@ -37,6 +39,7 @@ export default function Projects() {
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 py-20 pb-40">
           {userData.projects.map((proj, idx) => (
             <ProjectCard
+              key={idx}
               title={proj.title}
               link={proj.link}
               imgUrl={proj.imgUrl}
@@ -58,7 +61,7 @@ const ProjectCard = ({ title, link, imgUrl, number, description }) => {
   return (
     <>
     <div>
-      <a href={link} className="w-full block shadow-2xl">
+      <Link href={link} className="w-full block shadow-2xl">
         <div className="relative overflow-hidden">
           <div className="h-72 object-cover">
             <img
@@ -74,7 +77,7 @@ const ProjectCard = ({ title, link, imgUrl, number, description }) => {
             {number.length === 1 ? "0" + number : number}
           </h1>
         </div>
-      </a>
+      </Link>
       {/* <div>
         <p className="font-bold p-2">{description}</p>
       </div> */}

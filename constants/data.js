@@ -1,4 +1,5 @@
 const userData = {
+  homepageDescription: "Welcome to my portfolio site! I'm a freelance web developer who loves to build awesome websites that look amazing and work even better - with a focus on creating customized solutions that help businesses and individuals reach their online goals.",
   githubUsername: "ericnbello",
   name: "Eric Bello",
   designation: "Developer & Engineer",
@@ -6,6 +7,15 @@ const userData = {
   email: "ericnbello@gmail.com",
   phone: "",
   address: "Miami, FL",
+  articles: [
+    {
+      title: "Blog Coming Soon",
+      link: "/blog/blog-coming-soon",
+      imgUrl: "",
+      description: 'Check back soon for some blog posts!',
+      tags: ["cybersecurity"]
+    }
+  ],
   projects: [
     {
       title: "Spa Reservation System",
@@ -63,7 +73,7 @@ const userData = {
     },
     {
       title: 'Fylo Landing Page',
-      link: 'https://fylo-landing-page-ericnbello.netlify.app/',
+      link: '/projects',
       imgUrl: 'fylo-landing-page-screenshot-mockup.png',
       description: 'Technologies used: Next.js, TailwindCSS'
     }

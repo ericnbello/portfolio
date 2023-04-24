@@ -1,5 +1,7 @@
 import React, { useState, useSWR } from "react";
 import userData from "@constants/data";
+import Blog from "pages/blog/[pid]";
+import Link from "next/dist/client/link";
 
 function paginator(items, current_page, per_page_items) {
 	let page = current_page || 1,
@@ -20,7 +22,7 @@ function paginator(items, current_page, per_page_items) {
 	};
 }
 
-export default function Projects() {
+export default function Articles() {
   const [pageIndex, setPageIndex] = useState(0);
 
   paginator(userData.projects, 1, 6);
@@ -29,19 +31,20 @@ export default function Projects() {
     <section className="bg-white dark:bg-gray-800">
       <div className="max-w-6xl mx-auto h-48 bg-white dark:bg-gray-800">
         <h1 className=" text-5xl md:text-9xl font-bold py-20 text-center md:text-left">
-          Projects
+          Blog
         </h1>
       </div>
       {/* Grid starts here */}
       <div className="bg-[#F1F1F1] dark:bg-gray-900">
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 py-20 pb-40">
-          {userData.projects.map((proj, idx) => (
-            <ProjectCard
-              title={proj.title}
-              link={proj.link}
-              imgUrl={proj.imgUrl}
+          {userData.articles.map((post, idx) => (
+            <ArticleCard
+              title={post.title}
+              link={post.link}
+              imgUrl={post.imgUrl}
               number={`${idx + 1}`}
-              description={proj.description}
+              description={post.description}
+              tags={post.tags}
             />
           ))}
         </div>
@@ -54,11 +57,11 @@ export default function Projects() {
   );
 }
 
-const ProjectCard = ({ title, link, imgUrl, number, description }) => {
+const ArticleCard = ({ title, link, imgUrl, number, description, tags }) => {
   return (
     <>
     <div>
-      <a href={link} className="w-full block shadow-2xl">
+      <Link href={link} className="w-full block shadow-2xl">
         <div className="relative overflow-hidden">
           <div className="h-72 object-cover">
             <img
@@ -74,7 +77,7 @@ const ProjectCard = ({ title, link, imgUrl, number, description }) => {
             {number.length === 1 ? "0" + number : number}
           </h1>
         </div>
-      </a>
+      </Link>
       {/* <div>
         <p className="font-bold p-2">{description}</p>
       </div> */}
