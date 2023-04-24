@@ -2,7 +2,7 @@ const userData = {
   homepageDescription: "Welcome to my portfolio site! I'm a freelance web developer who loves to build awesome websites that look amazing and work even better - with a focus on creating customized solutions that help businesses and individuals reach their online goals.",
   githubUsername: "ericnbello",
   name: "Eric Bello",
-  designation: "Developer & Engineer",
+  designation: "Full-Stack Developer",
   avatarUrl: "/avatar.png",
   email: "ericnbello@gmail.com",
   phone: "",
@@ -74,7 +74,7 @@ const userData = {
     {
       title: 'Fylo Landing Page',
       link: '/projects',
-      imgUrl: 'fylo-landing-page-screenshot-mockup.png',
+      imgUrl: '/fylo-landing-page-screenshot-mockup.png',
       description: 'Technologies used: Next.js, TailwindCSS'
     }
   ],
