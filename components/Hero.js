@@ -9,7 +9,7 @@ export default function Hero() {
     <div className="flex flex-col md:flex-row justify-center items-start overflow-hidden pb-56">
       {/* Text container */}
 
-      <div className="w-full md:w-1/2 mx-auto text-center md:text-left">
+      <div className="w-full md:w-1/2 mx-auto text-center md:text-left my-auto">
         <p className="text-4xl md:text-8xl font-bold text-gray-700 dark:text-gray-200"><span>Hi, I'm </span>
           {/* <span className=""> */}
             <RoughNotation type="highlight" show={true} color={"#" + ((1 << 24) * Math.random() | 0).toString(16).padStart(6, "0")}>
@@ -46,7 +46,7 @@ export default function Hero() {
           </RainbowHighlight> */}
         </RoughNotationGroup>
 
-        <p className="text-lg md:text-xl text-gray-700 dark:text-gray-200 pt-8"> 
+        <p className="text-lg md:text-xl text-gray-700 dark:text-gray-200 pt-12"> 
         {userData.homepageDescription}
         </p>
       </div>
