@@ -1,6 +1,5 @@
 import React, { useState, useSWR } from "react";
 import userData from "@constants/data";
-import Blog from "pages/blog/[pid]";
 import Link from "next/dist/client/link";
 
 function paginator(items, current_page, per_page_items) {
@@ -39,6 +38,9 @@ export default function Articles() {
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 py-20 pb-40">
           {userData.articles.map((post, idx) => (
             <ArticleCard
+              key={idx}
+              pid={post.idx}
+              route={post.route}
               title={post.title}
               link={post.link}
               imgUrl={post.imgUrl}
@@ -57,11 +59,11 @@ export default function Articles() {
   );
 }
 
-const ArticleCard = ({ title, link, imgUrl, number, description, tags }) => {
+const ArticleCard = ({ title, route, imgUrl, number, description, tags }) => {
   return (
     <>
     <div>
-      <Link href={link} className="w-full block shadow-2xl">
+      <Link href={route} className="w-full block shadow-2xl">
         <div className="relative overflow-hidden">
           <div className="h-72 object-cover">
             <img

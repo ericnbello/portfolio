@@ -11,6 +11,7 @@
     "@formspree/react": "^2.2.4",
     "axios": "^0.21.4",
     "countapi-js": "^1.0.2",
+    "fs": "^0.0.1-security",
     "next": "10.x",
     "next-themes": "0.0.15",
     "react": "16.13.1",

@@ -1,5 +1,5 @@
 const userData = {
-  homepageDescription: "Welcome to my portfolio site! I'm a freelance web developer who loves to build awesome websites that look amazing and work even better - with a focus on creating customized solutions that help businesses and individuals reach their online goals.",
+  homepageDescription: "Hey there! Welcome to my portfolio site! As a freelance web developer, my passion lies in crafting incredible websites that not only look stunning but also function flawlessly. I specialize in creating tailored solutions that empower businesses and individuals to achieve their online objectives. If you're looking for a developer, cloud engineer, or DevOps professional, let's connect and discuss how I can contribute to your team. Together, we can accomplish some remarkable things!",
   githubUsername: "ericnbello",
   name: "Eric Bello",
   designation: "Full-Stack Developer",
@@ -9,82 +9,169 @@ const userData = {
   address: "Miami, FL",
   articles: [
     {
-      title: "Blog Coming Soon",
-      link: "/blog/blog-coming-soon",
-      imgUrl: "",
-      description: 'Check back soon for some blog posts!',
-      tags: ["cybersecurity"]
+      pid: "cloud-challenge",
+      title: "Cloud Challenge",
+      route: "/blog/articles/cloud-challenge",
+      overview: "This challenge was taken from cloudresumechallenge.dev which required applying knowledge of various AWS services into practical hands-on experience to deploy a serverless website.",
+      imgUrl: "/cloud-challege-blog-cover.jpeg",
+      description: [
+        {
+          intro: `After passing the AWS Certified Cloud Practitioner exam, I was ready to apply the knowledge I had learned into some practical experience. Researching cloud projects online led me to the Cloud Challenge, which I began by customizing my portfolio site (which is built with Next.js and Tailwind) and getting it deployed without using "easier" deployment sites like Netlify or Heroku. The following steps outline how I was able to integrate popular AWS services and complete the challenge.`,
+          headlines: [
+            `1. Deploy online as an Amazon S3 static website`,
+            `2. AWS Cloudfront for HTTPS`,
+            `3. DNS`,
+            `4. Visitor Counter - JavaScript `,
+            `5. Database - Dynamo DB`,
+            `6. API`,
+            `7. Python - Lambda function`,
+            `8. IaC - SAM CLI`,
+            `9. Git - Source Control`,
+            `10. CI/CD with GitHub Actions for Front and Back End`],
+          content: [
+            `The S3 service makes it easy to deploy and host a static site (such as this one created with React) with "buckets" or folders that contain the site source code.`, 
+            `Since sites hosted with S3 don't come with certificates by default, setting up CloudFront was a necessary step to enable secure HTTPS traffic for the website. I `, 
+            `While AWS offers its own DNS service called Route 53, I chose to keep my domain with the original provider I signed up with (Google) and edited the DNS entries to point to AWS and verify ownership.`,
+            ``,
+            ``,
+            ``,
+            ``,
+            `In order to avoid manually clicking around the AWS console (which is easy to do incorrectly!) the SAM (Servlerless Application Model) uses AWS CloudFormation to deploy resources `,
+            ``,
+            `` 
+          ],
+        },
+      ],
+      tags: [`AWS, S3, CloudFront, DynamoDB, Lambda, API Gateway, SAM CLI, CloudFormation, GitHub Actions`]
     }
   ],
   projects: [
     {
-      title: "Spa Reservation System",
-      link: "https://doc5gzxrvp9he.cloudfront.net/reservation-system-0.0.1-SNAPSHOT/",
+      pid: "spa-reservation-system",
+      title: "Spa Reservations",
+      route: "/projects/spa-reservation-system",
+      overview: "",
+      demoUrl: "https://doc5gzxrvp9he.cloudfront.net/reservation-system-0.0.1-SNAPSHOT/",
+      githubUrl: "https://github.com/ericnbello/spa-reservations",
       imgUrl: "/spa-reservations-screenshot.png",
-      description: 'Technologies used: AWS, Java, Spring Boot, Tailwind CSS, Thymeleaf'
+      description: [``, ``, ``
+      ],
+      tags: ["AWS", "Java", "Spring Boot", "Tailwind", "Thymeleaf"]
     },
     {
+      pid: "weather-forecast",
       title: "Weather Forecast",
-      link: "https://weather-forecast-ericnbello.herokuapp.com/",
+      route: "/projects/weather-forecast",
+      overview: "",
+      demoUrl: "https://d3lgvgrrop0yu.cloudfront.net/",
+      githubUrl: "https://github.com/ericnbello/weather",
       imgUrl: "/weather-app-django-preview-mockup.png",
-      description: 'Technologies used: Python, Django, TailwindCSS, JavaScript, API, Heroku'
+      description: [``, ``, ``
+      ],
+      tags: ["AWS", "Python", "Django", "Tailwind", "JavaScript", "API"]
     },
     {
+      pid: "entertainment-web-app",
       title: "Entertainment Web App",
-      link: "https://streaming-web-app.firebaseapp.com/",
+      route: "/projects/entertainment-web-app",
+      overview: "",
+      demoUrl: "https://streaming-web-app.firebaseapp.com/",
+      githubUrl: "https://github.com/ericnbello/entertainment-web-app",
       imgUrl: "/entertainment-web-app-screenshot.png",
-      description: 'Technologies used: React, TailwindCSS, React Router 6, Firebase'
+      description: [``, ``, ``
+      ],
+      tags: ['React, Tailwind, React Router 6, Firebase']
     },
     {
+      pid: "arch-studio",
       title: "Arch Studio",
-      link: "https://d35spakm21gfpt.cloudfront.net",
+      route: "/projects/arch-studio",
+      overview: "",
+      demoUrl: "https://d35spakm21gfpt.cloudfront.net",
+      githubUrl: "https://github.com/ericnbello/arch-studio-multipage",
       imgUrl: "/arch-studio-screenshot.png",
-      description: 'Technologies used: AWS, Next.js, Tailwind CSS'
+      description: [``, ``, ``
+      ],
+      tags: ['AWS, Next.js, Tailwind']
     },
     {
+      pid: "planet-facts",
       title: "Planet Facts",
-      link: "https://planet-facts-ericnbello.netlify.app/",
+      route: "/projects/planet-facts",
+      overview: "",
+      demoUrl: "https://planet-facts-ericnbello.netlify.app/",
+      githubUrl: "https://github.com/ericnbello/planet-facts",
       imgUrl: "/planet-facts-screenshot.png",
-      description: 'Technologies used: React, TailwindCSS, React Router 6, Netlify'
+      description: [``, ``, ``
+      ],
+      tags: ['React, Tailwind, React Router 6, Netlify']
     },
     {
+      pid: "coffeeroasters-subscription",
       title: "Cofferoasters Subscription",
-      link: "https://coffeeroasters-subscription.vercel.app/",
+      route: "/projects/coffeeroasters-subscription",
+      overview: "",
+      demoUrl: "https://coffeeroasters-subscription.vercel.app/",githubUrl: "",
       imgUrl: "/coffeeroasters-subscription-screenshot-mockup.png",
-      description: 'Technologies used: Next.js, TailwindCSS, Supabase, Stripe, Vercel'
+      description: [``, ``, ``
+      ],
+      tags: ['Next.js, Tailwind, Supabase, Stripe, Vercel']
     },
     {
+      pid: "etch-a-sketch",
       title: "Etch-a-sketch",
-      link: "https://etch-a-sketch-ericnbello.netlify.app/",
+      route: "/projects/etch-a-sketch",
+      overview: "",
+      demoUrl: "https://etch-a-sketch-ericnbello.netlify.app/",
+      githubUrl: "https://github.com/ericnbello/etch-a-sketch",
       imgUrl: "/etch-a-sketch-screenshot-mockup2.png",
-      description: 'Technologies used: HTML, CSS, vanilla JavaScript'
+      description: [``, ``, ``
+      ],
+      tags: ['HTML, CSS, JavaScript']
     },
     {
+      pid: "manage-landing-page",
       title: "Manage Landing Page",
-      link: "https://manage-landing-page-ericnbello.netlify.app",
+      route: "/projects/manage-landing-page",
+      overview: "",
+      demoUrl: "https://manage-landing-page-ericnbello.netlify.app",
+      githubUrl: "https://github.com/ericnbello/manage-landing-page",
       imgUrl: "/manage-landing-page-preview-mockup.png",
-      description: 'Technologies used: HTML, TailwindCSS, vanilla JavaScript'
+      description: [``, ``, ``
+      ],
+      tags: ['HTML, Tailwind, JavaScript']
     },
     {
+      pid: "calculator",
       title: "Calculator",
-      link: "https://calculator-app-ericnbello.netlify.app",
+      route: "/projects/calculator",
+      overview: "",
+      demoUrl: "https://calculator-app-ericnbello.netlify.app",
+      githubUrl: "https://github.com/ericnbello/calculator",
       imgUrl: "/calculator-screenshot-mockup.png",
-      description: 'Technologies used: React, TailwindCSS'
+      description: [``, ``, ``
+      ],
+      tags: ['React, Tailwind']
     },
     {
+      pid: "fylo",
       title: 'Fylo Landing Page',
-      link: '/projects',
+      route: "/projects/fylo",
+      overview: "",
+      demoUrl: '/projects',
+      githubUrl: "https://github.com/ericnbello/fylo-landing-page",
       imgUrl: '/fylo-landing-page-screenshot-mockup.png',
-      description: 'Technologies used: Next.js, TailwindCSS'
+      description: [``, ``, ``
+      ],
+      tags: ['Next.js, Tailwind']
     }
   ],
   about: {
     title:
-      "I'm a software developer that loves building products and web applications",
+      "",
     description: [
-      `I’m a developer looking for a new role in an exciting company, while also available for freelance work. I focus on writing accessible HTML, using modern CSS practices with frameworks like Tailwind to cut down on styling time, and writing clean JavaScript. When writing JavaScript code, I mostly use Next.js, a React framework, but I can adapt to whatever tools are required.`,
-      `From an early age, I've been interested in web application development - which led me to receive a bachelor degree in computer engineering in addition to starting multiple e-commerce stores. Between all of this, I've been able to code in React, Python, Java, MySQL, Bootstrap, Tailwind, C, and C++, to name a few.`,
-      `However, when I’m not coding, you’ll find me outdoors. I’m based in Miami, FL, so I love being out in nature whether that’s going for a walk, run or kayak adventure.`,
+      `Greetings! I'm a versatile developer on the hunt for an exciting opportunity with a vibrant company. Freelance work? Yeah, I'm open to that too. My expertise revolves around creating accessible HTML, implementing modern CSS techniques using frameworks like Tailwind to make styling a breeze, and churning out clean JavaScript code. My go-to for JavaScript development is Next.js, a React framework, but I'm adaptable and always ready to learn new tools.`,
+      `From a young age, web app development has been my passion. I even got myself a bachelor's degree in computer engineering and ventured into the world of e-commerce with multiple successful stores under my belt. Along the way, I've become proficient in a wide range of technologies like React, Python, Java, MySQL, Bootstrap, Tailwind, C, and C++, just to name a few. With my diverse skill set and a burning passion for cloud engineering and DevOps, I'm determined to position myself strongly for roles in these domains. Let's make things happen!`,
     ],
     currentProject: " ",
     currentProjectUrl: " ",

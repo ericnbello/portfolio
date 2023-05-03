@@ -36,7 +36,7 @@ export default function FavoriteProjects() {
         <div className="grid md:grid-cols-3 gap-8 lg:-mt-8 pb-40">
           {/* Single card */}
           <a
-            href={userData.projects[0].link}
+            href={userData.projects[0].route}
             className="w-full block col-span-3 shadow-2xl max-h-[600px] overflow-hidden"
           >
             <div className="relative overflow-hidden">
@@ -56,7 +56,7 @@ export default function FavoriteProjects() {
           </a>
           {/* Single card */}
           <a
-            href={userData.projects[1].link}
+            href={userData.projects[1].route}
             className="w-full block col-span-3 sm:col-span-2 sm:row-span-1 object-cover"
           >
             <div className="relative overflow-hidden shadow-2xl">
@@ -78,7 +78,7 @@ export default function FavoriteProjects() {
 
           {/* Single card */}
           <a
-            href={userData.projects[2].link}
+            href={userData.projects[2].route}
             className="w-full block col-span-3 sm:col-span-1 object-cover "
           >
             <div className="relative overflow-hidden shadow-2xl">
