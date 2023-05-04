@@ -4,7 +4,7 @@ import Skills from "../components/Skills";
 
 export default function skills() {
   return (
-    <ContainerBlock>
+    <ContainerBlock title="Skills - Eric Bello">
       <Skills />
     </ContainerBlock>
   );

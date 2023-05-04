@@ -2,6 +2,8 @@ import React from "react";
 import userData from "@constants/data";
 import Nextjs from "./icons/Nextjs";
 import Image from "next/image";
+import Certifications from "./Certifications";
+import TechStack from "./TechStack";
 
 export default function AboutMe() {
   return (
@@ -137,99 +139,8 @@ export default function AboutMe() {
               </p>
             ))}
 
-            {/* <h1 className="bg-red-500 dark:bg-white dark:text-gray-500 text-3xl rounded-md px-2 py- inline-block font-bold text-gray-50">
-              Education
-            </h1>
-            <div className="flex flex-row justify-between">
-              <div className="my-auto">
-                <p className="text-xl text-bold text-gray-500 relative overflow-hidden dark:text-gray-300 py-6">Florida International University</p>
-                <p className="text-lg text-semibold text-gray-500 relative overflow-hidden dark:text-gray-300 pb-12">Bachelor of Science in Computer Engineering</p>
-              </div>
-              <div className="my-auto">
-                <p className="py-6 hidden md:flex">Miami, FL</p>
-                <p className="pb-12 hidden md:flex md:flex-wrap">Dec. 2020</p>
-              </div>
-            </div> */}
-
-            <h1 className="bg-red-500 dark:bg-white dark:text-gray-500 text-3xl rounded-md px-2 py-1 inline-block font-bold text-gray-50">
-              Tech Stack
-            </h1>
-            <div className="flex flex-row flex-wrap mt-8 pb-6">
-              <img
-                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png"
-                className="h-20 w-20 mx-4 my-4"
-              />
-              <img
-                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/python/python.png"
-                className="h-20 w-20 mx-4 my-4"
-              />
-              <img
-                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png"
-                className="h-20 w-20 mx-4 my-4"
-              />
-              <img
-                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png"
-                className="h-20 w-20 mx-4 my-4"
-              />
-              <img
-                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/java/java.png"
-                className="h-20 w-20 mx-4 my-4"
-              />
-              <img
-                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/git/git.png"
-                className="h-20 w-20 mx-4 my-4"
-              />
-              <img
-                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png"
-                className="h-20 w-20 mx-4 my-4"
-              />
-              <img
-                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/firebase/firebase.png"
-                className="h-20 w-20 mx-4 my-4"
-              />
-              <img
-                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mysql/mysql.png"
-                className="h-20 w-20 mx-4 my-4"
-              />
-              <img
-                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mongodb/mongodb.png"
-                className="h-20 w-20 mx-4 my-4"
-              />
-              <img
-                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/postgresql/postgresql.png"
-                className="h-20 w-20 mx-4 my-4"
-              />
-            </div>
-
-            <h1 className="bg-red-500 dark:bg-white dark:text-gray-500 text-3xl rounded-md px-2 py-1 inline-block font-bold text-gray-50">
-              Certifications
-            </h1>
-            <div className="flex flex-row flex-wrap mt-8">
-              <a href="https://www.credly.com/badges/622e55f4-6f8c-405f-a821-7174736de80c/public_url">
-                <img
-                    src="/aws-certified-cloud-practitioner.png"
-                    className="h-36 w-36 mx-4 my-4"
-                />
-              </a>
-              <a href="https://www.credly.com/badges/1b0b8be2-c9e8-444b-a5f5-4889f09b4b69/public_url">
-                <img
-                    src="/comptia-network-ce-certification.1.png"
-                    className="h-36 w-36 mx-4 my-4"
-                />
-              </a>
-              <a href="https://www.credly.com/badges/736c7aab-22fd-4689-8faf-5c1ed4c6f972/public_url">
-                <img
-                    src="/comptia-security-ce-certification.png"
-                    className="h-36 w-36 mx-4 my-4"
-                />
-              </a>
-              <a href="https://www.credly.com/badges/bd9f6d71-2c3f-47a7-826b-90983067f698/public_url">
-                <img
-                    src="/comptia-cysa-ce-certification.png"
-                    className="h-36 w-36 mx-4 my-4"
-                />
-              </a>
-            </div>
+            <TechStack />
+            <Certifications />
           </div>
         </div>
       </div>
