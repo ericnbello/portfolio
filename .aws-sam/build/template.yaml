@@ -34,7 +34,7 @@ Resources:
     Properties:
       Cors:
         AllowMethods: '''GET'''
-        AllowOrigin: '''www.cloud.ericnbello.com'''
+        AllowOrigin: '''www.ericnbello.com'''
       EndpointConfiguration: Regional
       OpenApiVersion: 3.0.1
       StageName: Prod
