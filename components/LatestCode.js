@@ -6,12 +6,22 @@ import userData from "@constants/data";
 export default function LatestCode({ repositories }) {
   const [repos, setRepos] = useState([]);
 
-  useEffect(async () => {
-    let latestRepos = await getLatestRepos(userData);
-    // console.log("latestRepos", latestRepos);
-    setRepos(latestRepos);
-    // setRepos(repositories);
-  }, []);
+  // useEffect(async () => {
+  //   let latestRepos = await getLatestRepos(userData);
+  //   // console.log("latestRepos", latestRepos);
+  //   setRepos(latestRepos);
+  //   // setRepos(repositories);
+  // }, []);
+
+  useEffect(() => {
+    async function fetchData() {
+      // You can await here
+      const latestRepos = await getLatestRepos(userData);
+      setRepos(latestRepos);
+    }
+    fetchData();
+  }, []); // Or [] if effect doesn't need props or state
+
   return (
     <section className="bg-[#F1F1F1] -mt-40 dark:bg-gray-900 pb-40">
       <div className="max-w-6xl mx-auto">
@@ -48,7 +58,7 @@ export default function LatestCode({ repositories }) {
 
         {repos &&
           repos.map((latestRepo, idx) => (
-            <GithubRepoCard latestRepo={latestRepo} key="idx" />
+            <GithubRepoCard latestRepo={latestRepo} key={idx} />
           ))}
       </div>
     </section>
