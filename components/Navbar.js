@@ -138,17 +138,17 @@ export default function Navbar() {
               )}
             </a>
           </Link> */}
-          <Link href="/blog">
+          <Link href="https://www.blog.ericnbello.com">
             <a
               className={`text-base  ${
                 router.asPath === ""
                   ? "text-gray-800 font-bold dark:text-gray-400"
                   : "text-gray-600 dark:text-gray-300 font-normal "
               }`}
-              href="/blog"
+              href="https://www.blog.ericnbello.com"
             >
               Blog{" "}
-              {router.asPath === "/blog" && (
+              {router.asPath === "https://www.blog.ericnbello.com" && (
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -275,7 +275,7 @@ export default function Navbar() {
             Projects
           </a>
         </Link>
-        <a href="https://blog.ericnbello.com">
+        <a href="https://www.blog.ericnbello.com">
           <a className="text-base font-normal text-gray-600 dark:text-gray-300">
             Blog
           </a>
