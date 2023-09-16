@@ -8,7 +8,7 @@ export default function ContainerBlock({ children, ...customMeta }) {
   const router = useRouter();
 
   const meta = {
-    title: "Eric Bello - Developer Portfolio",
+    title: "Eric Bello Developer Portfolio",
     description: `Portfolio built using Next.js and TailwindCSS.`,
     image: "/avatar.png",
     type: "website",
@@ -29,7 +29,7 @@ export default function ContainerBlock({ children, ...customMeta }) {
           href={`https://ericnbello.com${router.asPath}`}
         />
         <meta property="og:type" content={meta.type} />
-        <meta property="og:site_name" content="Eric Bello - Developer Portfolio" />
+        <meta property="og:site_name" content="Eric Bello Developer Portfolio" />
         <meta property="og:description" content={meta.description} />
         <meta property="og:title" content={meta.title} />
         {/* <meta property="og:image" content={meta.image} /> */}
