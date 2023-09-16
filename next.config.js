@@ -5,7 +5,7 @@ module.exports = {
       return {
         '/': { page: '/' },
         '/about': { page: '/about' },
-        '/blog': { page: '/blog' },
+        // '/blog': { page: '/blog' },
         '/contact': { page: '/contact' },
         '/experience': { page: '/experience' },
         '/projects': { page: '/projects' },

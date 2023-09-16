@@ -275,11 +275,11 @@ export default function Navbar() {
             Projects
           </a>
         </Link>
-        <Link href="https://blog.ericnbello.com">
+        <a href="https://blog.ericnbello.com">
           <a className="text-base font-normal text-gray-600 dark:text-gray-300">
             Blog
           </a>
-        </Link>
+        </a>
         {/* <Link href="/experience">
           <a className="text-base font-normal text-gray-600 dark:text-gray-300">
             Experience
