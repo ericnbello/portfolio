@@ -275,7 +275,7 @@ export default function Navbar() {
             Projects
           </a>
         </Link>
-        <Link href="/blog">
+        <Link href="https://blog.ericnbello.com">
           <a className="text-base font-normal text-gray-600 dark:text-gray-300">
             Blog
           </a>
