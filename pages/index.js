@@ -8,8 +8,8 @@ import LatestCode from "../components/LatestCode";
 export default function Home() {
   return (
     <ContainerBlock
-      title="Eric Bello"
-      description="Portfolio site built using AWS, Next.js and Tailwind."
+      title="Eric Bello - Developer Portfolio"
+      description="Portfolio site built using Next.js and Tailwind."
     >
       <Hero />
       <FavoriteProjects />
