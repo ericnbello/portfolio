@@ -5,7 +5,7 @@ import Navbar from "./Navbar";
 import Footer from "./Footer";
 import { Metadata } from 'next';
 
-export const Metadata = {
+Metadata = {
   title: 'Eric Bello Developer Portfolio',
   description: 'Developer portfolio built using Next.js and TailwindCSS.',
 }
