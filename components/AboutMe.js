@@ -64,7 +64,7 @@ export default function AboutMe() {
                 Job Opportunities
               </h1>
               <p className="text-lg text-gray-500 mt-4 dark:text-gray-300">
-              Open to freelance work and seeking full-time cloud engineering roles. Check my{" "}
+              Open to freelance work and seeking full-time developer roles. Check my{" "}
                 <a
                   href={userData.resumeUrl}
                   target="__blank"
