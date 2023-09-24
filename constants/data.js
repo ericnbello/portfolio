@@ -64,9 +64,9 @@ const userData = {
       title: "Weather Forecast",
       route: "/projects/weather-forecast",
       overview: "",
-      demoUrl: "https://d3lgvgrrop0yu.cloudfront.net/",
+      demoUrl: "https://weather-forecast-ericnbello.herokuapp.com",
       githubUrl: "https://github.com/ericnbello/weather",
-      imgUrl: "/weather-app-django-preview-mockup.png",
+      imgUrl: "/enhanced-weather-app-screenshot.png",
       description: [``, ``, ``
       ],
       tags: ["AWS", "Python", "Django", "Tailwind", "JavaScript", "API"]
