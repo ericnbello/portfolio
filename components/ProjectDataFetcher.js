@@ -33,8 +33,8 @@ const ProjectDataFetcher = () => {
   //   fetchData();
   // }, []);
 
-  // return projectData ? <ProjectPage projectData={projectData} /> : <div>Loading...</div>;
-  return <ProjectPage projectData={projectData} />;
+  return projectData ? <ProjectPage projectData={projectData} /> : <div>Loading...</div>;
+  // return <ProjectPage projectData={projectData} />;
 };
 
 export default ProjectDataFetcher;

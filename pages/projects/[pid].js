@@ -1,12 +1,3 @@
-// import React from "react";
-// import ProjectDataFetcher from '../../components/ProjectDataFetcher'
-
-// const ProjectPageWrapper = () => {
-//   return <ProjectDataFetcher />;
-// };
-
-// export default ProjectPageWrapper;
-
 import React from "react";
 import { useRouter } from "next/router";
 // import data from "../components/ProjectDataFetcher";
@@ -17,8 +8,19 @@ import Page404 from "../../components/Page404";
 const ProjectPage = () => {
     const router = useRouter();
     const { pid } = router.query;
-    const project = userData.projects.find((item) => item.pid === pid);
-  
+
+    const findProjectByPid = (pid) => {
+        return userData.projects.find((item) => item.pid === pid);
+      };
+    
+      let project = null;
+    
+      if (pid) {
+        // If pid is an object, extract the actual pid value
+        const actualPid = typeof pid === 'object' ? pid.pid : pid;
+        project = findProjectByPid(actualPid);
+      }
+
     if (!project) {
       return <Page404 />;
     }

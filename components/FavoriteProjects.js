@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import userData from "@constants/data";
+import userData from "../constants/data";
 
 export default function FavoriteProjects() {
   return (
@@ -78,7 +78,8 @@ export default function FavoriteProjects() {
 
           {/* Single card */}
           <a
-            to={userData.projects[2].route}
+            href={userData.projects[2].route}
+            // href="/projects/[pid]"
             className="w-full block col-span-3 sm:col-span-1 object-cover "
           >
             <div className="relative overflow-hidden shadow-2xl">
