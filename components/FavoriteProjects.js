@@ -35,68 +35,72 @@ export default function FavoriteProjects() {
         {/* Grid starts here */}
         <div className="grid md:grid-cols-3 gap-8 lg:-mt-8 pb-40">
           {/* Single card */}
-          <a
-            href={userData.projects[0].route}
-            className="w-full block col-span-3 shadow-2xl max-h-[600px] overflow-hidden"
-          >
-            <div className="relative overflow-hidden">
-              <img
-                src={userData.projects[0].imgUrl}
-                alt="portfolio project screenshot"
-                className="transform hover:scale-125 transition duration-2000 ease-out"
-              />
-              <h1 className="absolute top-10 left-10 text-gray-50 font-bold text-xl bg-red-500 rounded-md px-2">
-                {userData.projects[0].title}
-              </h1>
-              <h1 className="absolute bottom-10 left-10 text-gray-50 font-bold text-xl">
-                01
-              </h1>
+            <div className="w-full block col-span-3 shadow-2xl max-h-[600px] overflow-hidden">
+            <Link
+              href={userData.projects[0].route}
+              
+            >
+              <div className="relative overflow-hidden">
+                <img
+                  src={userData.projects[0].imgUrl}
+                  alt="portfolio project screenshot"
+                  className="transform hover:scale-125 transition duration-2000 ease-out"
+                />
+                <h1 className="absolute top-10 left-10 text-gray-50 font-bold text-xl bg-red-500 rounded-md px-2">
+                  {userData.projects[0].title}
+                </h1>
+                <h1 className="absolute bottom-10 left-10 text-gray-50 font-bold text-xl">
+                  01
+                </h1>
+              </div>
+              {/* <p>{userData.projects[0].description}</p> */}
+            </Link>
             </div>
-            {/* <p>{userData.projects[0].description}</p> */}
-          </a>
+          
           {/* Single card */}
-          <a
-            href={userData.projects[1].route}
-            className="w-full block col-span-3 sm:col-span-2 sm:row-span-1 object-cover"
-          >
-            <div className="relative overflow-hidden shadow-2xl">
-              <img
-                src={userData.projects[1].imgUrl}
-                alt="portfolio project screenshot"
-                className="transform hover:scale-125 transition duration-2000 ease-out"
-              />
-              <h1 className="absolute top-10 left-10 text-gray-50 font-bold text-xl bg-red-500 rounded-md px-2">
-                {userData.projects[1].title}
-              </h1>
-              <h1 className="absolute bottom-10 left-10 text-gray-50 font-bold text-xl">
-                02
-              </h1>
-            </div>
-            {/* <p>{userData.projects[1].description}</p> */}
-          </a>
+          <div className="w-full block col-span-3 sm:col-span-2 sm:row-span-1 object-cover">
+            <Link
+              href={userData.projects[1].route}
+            >
+              <div className="relative overflow-hidden shadow-2xl">
+                <img
+                  src={userData.projects[1].imgUrl}
+                  alt="portfolio project screenshot"
+                  className="transform hover:scale-125 transition duration-2000 ease-out"
+                />
+                <h1 className="absolute top-10 left-10 text-gray-50 font-bold text-xl bg-red-500 rounded-md px-2">
+                  {userData.projects[1].title}
+                </h1>
+                <h1 className="absolute bottom-10 left-10 text-gray-50 font-bold text-xl">
+                  02
+                </h1>
+              </div>
+              {/* <p>{userData.projects[1].description}</p> */}
+            </Link>
+          </div>
           {/* <div className="block sm:flex sm:flex-col sm:justify-between"> */}
 
           {/* Single card */}
-          <a
-            href={userData.projects[2].route}
-            // href="/projects/[pid]"
-            className="w-full block col-span-3 sm:col-span-1 object-cover "
-          >
-            <div className="relative overflow-hidden shadow-2xl">
-              {/* <div className="overlay absolute inset-0 bg-black bg-opacity-70 z-10"></div> */}
-              <img
-                src={userData.projects[2].imgUrl}
-                alt="portfolio project screenshot"
-                className="transform hover:scale-125 transition duration-2000 ease-out"
-              />
-              <h1 className="absolute top-10 left-10 text-gray-50 font-bold text-xl bg-red-500 rounded-md px-2">
-                {userData.projects[2].title}
-              </h1>
-              <h1 className="absolute bottom-10 left-10 text-gray-50 font-bold text-xl">
-                03
-              </h1>
-            </div>
-          </a>
+          <div className="w-full block col-span-3 sm:col-span-1 object-cover ">
+            <Link
+              href={userData.projects[2].route}            
+            >
+              <div className="relative overflow-hidden shadow-2xl">
+                {/* <div className="overlay absolute inset-0 bg-black bg-opacity-70 z-10"></div> */}
+                <img
+                  src={userData.projects[2].imgUrl}
+                  alt="portfolio project screenshot"
+                  className="transform hover:scale-125 transition duration-2000 ease-out"
+                />
+                <h1 className="absolute top-10 left-10 text-gray-50 font-bold text-xl bg-red-500 rounded-md px-2">
+                  {userData.projects[2].title}
+                </h1>
+                <h1 className="absolute bottom-10 left-10 text-gray-50 font-bold text-xl">
+                  03
+                </h1>
+              </div>
+            </Link>
+          </div>
 
           {/* Single card */}
           {/* <a
