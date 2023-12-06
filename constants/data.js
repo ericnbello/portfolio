@@ -4,7 +4,7 @@ const userData = {
   name: "Eric Bello",
   designation: "Full-Stack Developer",
   avatarUrl: "/avatar.png",
-  email: "hi@ericnbello.com",
+  email: "ericnbello@icloud.com",
   phone: "",
   address: "Miami, FL",
   articles: [
@@ -48,16 +48,16 @@ const userData = {
   ],
   projects: [
     {
-      pid: "spa-reservation-system",
-      title: "Spa Reservations",
-      route: "/projects/spa-reservation-system",
+      pid: "entertainment-web-app",
+      title: "Entertainment Web App",
+      route: "/projects/entertainment-web-app",
       overview: "",
-      demoUrl: "https://doc5gzxrvp9he.cloudfront.net/reservation-system-0.0.1-SNAPSHOT/",
-      githubUrl: "https://github.com/ericnbello/spa-reservations",
-      imgUrl: "/spa-reservations-screenshot.png",
+      demoUrl: "https://streaming-web-app.firebaseapp.com/",
+      githubUrl: "https://github.com/ericnbello/entertainment-web-app",
+      imgUrl: "/entertainment-web-app-screenshot.png",
       description: [``, ``, ``
       ],
-      tags: ["AWS", "Java", "Spring Boot", "Tailwind", "Thymeleaf"]
+      tags: ['React', 'Tailwind', 'Firebase', 'React Router', ]
     },
     {
       pid: "weather-forecast",
@@ -69,19 +69,54 @@ const userData = {
       imgUrl: "/enhanced-weather-app-screenshot.png",
       description: [``, ``, ``
       ],
-      tags: ["AWS", "Python", "Django", "Tailwind", "JavaScript", "API"]
+      tags: ["Python", "Django", "Tailwind", "JavaScript", "API"]
     },
     {
-      pid: "entertainment-web-app",
-      title: "Entertainment Web App",
-      route: "/projects/entertainment-web-app",
+      pid: "country-searcher",
+      title: 'Country Searcher',
+      route: "/projects/country-searcher",
       overview: "",
-      demoUrl: "https://streaming-web-app.firebaseapp.com/",
-      githubUrl: "https://github.com/ericnbello/entertainment-web-app",
-      imgUrl: "/entertainment-web-app-screenshot.png",
+      demoUrl: 'https://country-searcher-ericnbello.netlify.app/',
+      githubUrl: "https://github.com/ericnbello/country-searcher",
+      imgUrl: '/country-searcher-screenshot.png',
       description: [``, ``, ``
       ],
-      tags: ['React, Tailwind, React Router 6, Firebase']
+      tags: ["React", "Tailwind", "API"]
+    },
+    {
+      pid: "serverless-website",
+      title: "Serverless Website",
+      route: "/projects/serverless-website",
+      overview: "",
+      demoUrl: "https://www.cloud.ericnbello.com",
+      githubUrl: "https://github.com/ericnbello/cloud-resume",
+      imgUrl: "/serverless-website.png",
+      description: [``, ``, ``
+      ],
+      tags: ['AWS', 'Next.js', 'Tailwind', 'Python']
+    },
+    {
+      pid: "spa-reservation-system",
+      title: "Spa Reservations",
+      route: "/projects/spa-reservation-system",
+      overview: "",
+      demoUrl: "https://doc5gzxrvp9he.cloudfront.net/reservation-system-0.0.1-SNAPSHOT/",
+      githubUrl: "https://github.com/ericnbello/spa-reservations",
+      imgUrl: "/spa-reservations-screenshot.png",
+      description: [``, ``, ``
+      ],
+      tags: ["Java", "Spring Boot", "Tailwind", "Thymeleaf"]
+    },
+    {
+      pid: "coffeeroasters-subscription",
+      title: "Cofferoasters Subscription",
+      route: "/projects/coffeeroasters-subscription",
+      overview: "",
+      demoUrl: "https://coffeeroasters-subscription.vercel.app/",githubUrl: "",
+      imgUrl: "/coffeeroasters-subscription-screenshot-mockup.png",
+      description: [``, ``, ``
+      ],
+      tags: ['Next.js, Tailwind, Supabase, Stripe']
     },
     {
       pid: "arch-studio",
@@ -105,18 +140,7 @@ const userData = {
       imgUrl: "/planet-facts-screenshot.png",
       description: [``, ``, ``
       ],
-      tags: ['React, Tailwind, React Router 6, Netlify']
-    },
-    {
-      pid: "coffeeroasters-subscription",
-      title: "Cofferoasters Subscription",
-      route: "/projects/coffeeroasters-subscription",
-      overview: "",
-      demoUrl: "https://coffeeroasters-subscription.vercel.app/",githubUrl: "",
-      imgUrl: "/coffeeroasters-subscription-screenshot-mockup.png",
-      description: [``, ``, ``
-      ],
-      tags: ['Next.js, Tailwind, Supabase, Stripe, Vercel']
+      tags: ['React, Tailwind, React Router']
     },
     {
       pid: "etch-a-sketch",
@@ -181,7 +205,7 @@ const userData = {
     {
       title: "Web Developer",
       company: "",
-      year: "2022",
+      year: "2023",
       companyLink: " ",
       desc: " ",
     },

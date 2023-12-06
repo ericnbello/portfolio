@@ -6,12 +6,12 @@ export default function FavoriteProjects() {
   return (
     <div className="bg-[#F1F1F1] -mt-40 dark:bg-gray-900">
       <div className="max-w-6xl mx-auto">
-        <header className="flex flex-col md:flex-row justify-between items-center pt-12 md:pt-40 mx-10 md:my-20 lg:my-0">
-          <h1 className="text-6xl lg:text-9xl max-w-lg font-bold text-gray-500 my-20 md:my-0 dark:text-gray-600 text-center">
+        <header className="flex flex-col items-center justify-between pt-12 mx-10 md:flex-row md:pt-40 md:my-20 lg:my-0">
+          <h1 className="max-w-lg my-20 text-6xl font-bold text-center text-gray-500 lg:text-9xl md:my-0 dark:text-gray-600">
             Favorite Projects
           </h1>
           <a href="/projects">
-            <a className="mb-20 md:mb-0 px-8 py-4 rounded-md bg-white shadow-lg text-xl font-semibold flex flex-row space-x-4 items-center dark:text-gray-700">
+            <a className="flex flex-row items-center px-8 py-4 mb-20 space-x-4 text-xl font-semibold bg-white rounded-md shadow-lg md:mb-0 dark:text-gray-700">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
@@ -33,9 +33,9 @@ export default function FavoriteProjects() {
         </header>
 
         {/* Grid starts here */}
-        <div className="grid md:grid-cols-3 gap-8 lg:-mt-8 pb-40">
+        <div className="grid gap-8 pb-40 md:grid-cols-3 md:grid-rows-2 lg:-mt-8">
           {/* Single card */}
-            <div className="w-full block col-span-3 shadow-2xl max-h-[600px] overflow-hidden">
+            <div className="w-full block col-span-3 row-span-1 shadow-2xl max-h-[600px] overflow-hidden">
             <Link
               href={userData.projects[0].route}
               
@@ -44,12 +44,12 @@ export default function FavoriteProjects() {
                 <img
                   src={userData.projects[0].imgUrl}
                   alt="portfolio project screenshot"
-                  className="transform hover:scale-125 transition duration-2000 ease-out"
+                  className="transition ease-out transform hover:scale-125 duration-2000"
                 />
-                <h1 className="absolute top-10 left-10 text-gray-50 font-bold text-xl bg-red-500 rounded-md px-2">
+                <h1 className="absolute px-2 text-xl font-bold bg-red-500 rounded-md top-10 left-10 text-gray-50">
                   {userData.projects[0].title}
                 </h1>
-                <h1 className="absolute bottom-10 left-10 text-gray-50 font-bold text-xl">
+                <h1 className="absolute text-xl font-bold bottom-10 left-10 text-gray-50">
                   01
                 </h1>
               </div>
@@ -58,7 +58,7 @@ export default function FavoriteProjects() {
             </div>
           
           {/* Single card */}
-          <div className="w-full block col-span-3 sm:col-span-2 sm:row-span-1 object-cover">
+          <div className="block object-cover w-full col-span-3 sm:col-span-2 sm:row-span-2">
             <Link
               href={userData.projects[1].route}
             >
@@ -66,36 +66,36 @@ export default function FavoriteProjects() {
                 <img
                   src={userData.projects[1].imgUrl}
                   alt="portfolio project screenshot"
-                  className="transform hover:scale-125 transition duration-2000 ease-out"
+                  className="transition ease-out transform hover:scale-125 duration-2000"
                 />
-                <h1 className="absolute top-10 left-10 text-gray-50 font-bold text-xl bg-red-500 rounded-md px-2">
+                <h1 className="absolute px-2 text-xl font-bold bg-red-500 rounded-md top-10 left-10 text-gray-50">
                   {userData.projects[1].title}
                 </h1>
-                <h1 className="absolute bottom-10 left-10 text-gray-50 font-bold text-xl">
+                <h1 className="absolute text-xl font-bold bottom-10 left-10 text-gray-50">
                   02
                 </h1>
               </div>
               {/* <p>{userData.projects[1].description}</p> */}
             </Link>
           </div>
-          {/* <div className="block sm:flex sm:flex-col sm:justify-between"> */}
+          
 
           {/* Single card */}
-          <div className="w-full block col-span-3 sm:col-span-1 object-cover ">
+          <div className="block object-cover w-full col-span-3 sm:col-span-1 sm:row-span-1">
             <Link
               href={userData.projects[2].route}            
             >
               <div className="relative overflow-hidden shadow-2xl">
-                {/* <div className="overlay absolute inset-0 bg-black bg-opacity-70 z-10"></div> */}
+                {/* <div className="absolute inset-0 z-10 bg-black overlay bg-opacity-70"></div> */}
                 <img
                   src={userData.projects[2].imgUrl}
                   alt="portfolio project screenshot"
-                  className="transform hover:scale-125 transition duration-2000 ease-out"
+                  className="transition ease-out transform hover:scale-125 duration-2000"
                 />
-                <h1 className="absolute top-10 left-10 text-gray-50 font-bold text-xl bg-red-500 rounded-md px-2">
+                <h1 className="absolute px-2 text-xl font-bold bg-red-500 rounded-md top-10 left-10 text-gray-50">
                   {userData.projects[2].title}
                 </h1>
-                <h1 className="absolute bottom-10 left-10 text-gray-50 font-bold text-xl">
+                <h1 className="absolute text-xl font-bold bottom-10 left-10 text-gray-50">
                   03
                 </h1>
               </div>
@@ -103,27 +103,28 @@ export default function FavoriteProjects() {
           </div>
 
           {/* Single card */}
-          {/* <a
-            href="https://manage-landing-page-ericnbello.netlify.app"
-            className="w-full block col-span-3 sm:col-span-1 object-cover"
+          {/* <div className="block w-full col-span-3 sm:flex sm:flex-col sm:justify-between sm:col-span-1 sm:row-span-1">
+          <Link
+            href={userData.projects[3].route}            
+            // className="block object-cover w-full col-span-1 md:col-span-3 sm:flex sm:flex-col sm:justify-between"
           >
             <div className="relative overflow-hidden shadow-2xl"> */}
-              {/* <div className="overlay absolute inset-0 bg-black bg-opacity-70 z-10"></div> */}
+              {/* <div className="absolute inset-0 z-10 bg-black overlay bg-opacity-70"></div> */}
               {/* <img
-                src="/manage-landing-page-preview-mockup.png"
-                alt="portfolio"
-                className="transform hover:scale-125 transition duration-2000 ease-out object-cover shadow-2xl"
+                src={userData.projects[3].imgUrl}
+                // src="/manage-landing-page-preview-mockup.png"
+                alt="portfolio project screenshot"
+                className="object-cover transition ease-out transform shadow-2xl hover:scale-125 duration-2000"
               />
-              <h1 className="absolute top-10 left-10 text-gray-50 font-bold text-xl bg-red-500 rounded-md px-2">
+              <h1 className="absolute px-2 text-xl font-bold bg-red-500 rounded-md top-10 left-10 text-gray-50">
                 {userData.projects[3].title}
               </h1>
-              <h1 className="absolute bottom-10 left-10 text-gray-50 font-bold text-xl">
+              <h1 className="absolute text-xl font-bold bottom-10 left-10 text-gray-50">
                 04
               </h1>
             </div> */}
             {/* <p>{userData.projects[3].description}</p> */}
-          {/* </a> */}
-          
+          {/* </Link> */}
         {/* </div> */}
         </div>
       </div>
