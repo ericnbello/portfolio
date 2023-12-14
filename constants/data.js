@@ -64,7 +64,7 @@ const userData = {
       title: "Weather Forecast",
       route: "/projects/weather-forecast",
       overview: "",
-      demoUrl: "https://weather-forecast-ericnbello.herokuapp.com",
+      demoUrl: "https://weather-forecast-ericnbello.onrender.com",
       githubUrl: "https://github.com/ericnbello/weather",
       imgUrl: "/enhanced-weather-app-screenshot.png",
       description: [``, ``, ``
@@ -100,7 +100,7 @@ const userData = {
       title: "Spa Reservations",
       route: "/projects/spa-reservation-system",
       overview: "",
-      demoUrl: "https://doc5gzxrvp9he.cloudfront.net/reservation-system-0.0.1-SNAPSHOT/",
+      demoUrl: "https://spa-reservations.onrender.com",
       githubUrl: "https://github.com/ericnbello/spa-reservations",
       imgUrl: "/spa-reservations-screenshot.png",
       description: [``, ``, ``
