@@ -1,6 +1,3 @@
-// import Footer from './Footer.js';
-import '../styles/resume.module.css';
-
 export default function Resume() {
   return (
     <main className="resume-body">
