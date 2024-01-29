@@ -9,20 +9,25 @@
   },
   "dependencies": {
     "@formspree/react": "^2.2.4",
+    "@tailwindcss/nesting": "^0.0.0-insiders.565cd3e",
+    "@types/tailwindcss": "^3.1.0",
     "axios": "^0.21.4",
     "countapi-js": "^1.0.2",
     "fs": "^0.0.1-security",
     "next": "10.x",
     "next-themes": "0.0.15",
+    "postcss-import": "^16.0.0",
+    "postcss-nesting": "^12.0.2",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-rough-notation": "^1.0.1",
+    "sass": "^1.70.0",
     "xhr": "^2.6.0",
     "xhr2": "^0.2.1"
   },
   "devDependencies": {
     "autoprefixer": "^10.3.1",
     "postcss": "^8.3.6",
-    "tailwindcss": "^2.2.7"
+    "tailwindcss": "^3.4.1"
   }
 }
