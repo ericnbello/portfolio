@@ -2,7 +2,7 @@ const userData = {
   homepageDescription: "Hey there! Welcome to my portfolio site! As a developer, my passion lies in crafting incredible websites that not only look stunning but also function flawlessly. I specialize in creating tailored solutions that empower businesses and individuals to achieve their online objectives. If you're looking for a developer, let's connect and discuss how I can contribute to your team. Together, we can accomplish some remarkable things!",
   githubUsername: "ericnbello",
   name: "Eric Bello",
-  designation: "Full-Stack Developer",
+  designation: "Cloud Engineer",
   avatarUrl: "/avatar.png",
   email: "ericnbello@icloud.com",
   phone: "",
