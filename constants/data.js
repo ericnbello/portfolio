@@ -1,5 +1,5 @@
 const userData = {
-  homepageDescription: "Hey there! Welcome to my portfolio site! As a developer, my passion lies in crafting incredible websites that not only look stunning but also function flawlessly. I specialize in creating tailored solutions that empower businesses and individuals to achieve their online objectives. If you're looking for a developer, let's connect and discuss how I can contribute to your team. Together, we can accomplish some remarkable things!",
+  homepageDescription: "Welcome to my site! I'm an aspiring cloud engineer with a deep commitment to continuous learning, navigating the realms of AWS, Azure, and Google Cloud Platform. From architecting scalable solutions to optimizing cloud infrastructures, I thrive in the dynamic landscape of cloud computing.",
   githubUsername: "ericnbello",
   name: "Eric Bello",
   designation: "Cloud Engineer",
