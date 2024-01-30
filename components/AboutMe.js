@@ -4,6 +4,7 @@ import Nextjs from "./icons/Nextjs";
 import Image from "next/image";
 import Certifications from "./Certifications";
 import TechStack from "./TechStack";
+import Link from "next/link";
 
 export default function AboutMe() {
   return (
@@ -64,14 +65,14 @@ export default function AboutMe() {
                 Job Opportunities
               </h1>
               <p className="text-lg text-gray-500 mt-4 dark:text-gray-300">
-              Open to freelance work and seeking full-time developer roles. Check my{" "}
-                <a
+              Open to freelance work and seeking full-time roles. Check my{" "}
+                <Link
                   href={userData.resumeUrl}
-                  target="__blank"
+                  // target="__blank"
                   className="text-gray-800 border-b-2 border-gray-800 dark:border-gray-300 font-bold dark:text-gray-300"
                 >
                   resume
-                </a>{" "}
+                </Link>{" "}
                 and connect with me to collaborate!
               </p>
             </div>

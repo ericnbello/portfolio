@@ -195,8 +195,9 @@ const userData = {
     title:
       "",
     description: [
-      `Greetings! I'm a versatile developer on the hunt for an exciting opportunity with a vibrant company. Freelance work? Yeah, I'm open to that too. My expertise revolves around creating accessible HTML, implementing modern CSS techniques using frameworks like Tailwind to make styling a breeze, and churning out clean JavaScript code. My go-to for JavaScript development is Next.js, a React framework, but I'm adaptable and always ready to learn new tools.`,
-      `From a young age, web app development has been my passion. I even got myself a bachelor's degree in computer engineering and ventured into the world of e-commerce with multiple successful stores under my belt. Along the way, I've become proficient in a wide range of technologies like React, Python, Java, MySQL, Bootstrap, Tailwind, C, and C++, just to name a few. With my diverse skill set and a burning passion for cloud engineering and DevOps, I'm determined to position myself strongly for roles in these domains. Let's make things happen!`,
+      `I'm Eric, ready to bring my skills and passion to the dynamic realm of cloud technology. Starting with a love for web development, I ventured into computer engineering.`,
+
+      `Now, I'm honing my expertise in the cloud, supported by AWS certifications. Embracing the ever-evolving tech landscape, I find joy in exploring limitless possibilities in the world of cloud computing. Excited to contribute and thrive in this dynamic field!`
     ],
     currentProject: " ",
     currentProjectUrl: " ",
@@ -218,7 +219,7 @@ const userData = {
     },
   ],
   resumeUrl:
-    "https://drive.google.com/file/d/1_4B8wQgYINmFtXYqKuvAKtrgWdeTaHzX/view?usp=sharing",
+    "/resume",
   socialLinks: {
     instagram: "",
     twitter: "https://twitter.com/ericnbello",

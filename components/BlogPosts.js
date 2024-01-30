@@ -1,6 +1,6 @@
 import React, { useState, useSWR } from "react";
 import userData from "@constants/data";
-import Link from "next/dist/client/link";
+import Link from "next/link";
 
 function paginator(items, current_page, per_page_items) {
 	let page = current_page || 1,
