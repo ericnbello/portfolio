@@ -66,13 +66,14 @@ export default function AboutMe() {
               </h1>
               <p className="text-lg text-gray-500 mt-4 dark:text-gray-300">
               Open to freelance work and seeking full-time roles. Check my{" "}
+              <span className="text-gray-800 border-b-2 border-gray-800 dark:border-gray-300 font-bold dark:text-gray-300">
                 <Link
                   href={userData.resumeUrl}
                   // target="__blank"
-                  className="text-gray-800 border-b-2 border-gray-800 dark:border-gray-300 font-bold dark:text-gray-300"
+                  className=""
                 >
                   resume
-                </Link>{" "}
+                </Link></span>{" "}
                 and connect with me to collaborate!
               </p>
             </div>

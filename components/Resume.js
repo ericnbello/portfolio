@@ -192,21 +192,22 @@ export default function Resume() {
                   Experience</h2>
                 <hr />
                 <div className="company">
-                  <div className="company-header">Owner
+                  <div className="company-header">Web Developer
                   </div>
                 </div>
                 <div className="item">
                     <div className="meta">
                         <div className="upper-row">
-                            <h3 className="job-title">ENB Goods, Miami, FL</h3>
+                            <h3 className="job-title">Freelance/Independent, Miami, FL</h3>
                             <div className="time">Jan 2022 - Present</div>
                         </div>{/*<!--//upper-row-->*/}
                     </div>{/*<!--//meta-->*/}
                     <div className="details">
                       <ul className="fa-ul">
-                        <li><i className="fa-li fa fa-angle-right"></i>- Orchestrated impactful promotional campaigns, leveraging a diverse range of innovative products to elevate brand visibility, engage target audiences, and drive measurable results</li>
-                        <li><i className="fa-li fa fa-angle-right"></i>- Customized tailored promotional strategies to meet unique client needs, fostering lasting client relationships and consistently exceeding expectations</li>
-                        <li><i className="fa-li fa fa-angle-right"></i>- Successfully expanded business offerings beyond promotional products, integrating web development services, thereby enhancing the agency’s market presence and revenue stream</li>
+                        <li><i className="fa-li fa fa-angle-right"></i>- Compose responsive websites and evaluate improvement strategies by researching new technologies</li>
+                        <li><i className="fa-li fa fa-angle-right"></i>- Facilitate positive client relations through professional interaction, issue resolution, and iteration delivery</li>
+                        <li><i className="fa-li fa fa-angle-right"></i>- Employ multiple cloud-based applications to troubleshoot technical problems and communicate with clients</li>
+                        <li><i className="fa-li fa fa-angle-right"></i>- Continuously improve project delivery process which expedited customer orders and ensured swift delivery</li>
                       </ul>
                     </div>{/*<!--//details-->*/}
                 </div>{/*<!--//item-->*/}
