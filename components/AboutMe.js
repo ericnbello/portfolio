@@ -60,7 +60,7 @@ export default function AboutMe() {
                 and I'll be sure to get back to you. Looking forward to hearing from you!
               </p>
           {/* </div> */}
-            <div className="mt-8">
+            {/* <div className="mt-8">
               <h1 className="text-xl font-semibold text-gray-700 dark:text-gray-200">
                 Job Opportunities
               </h1>
@@ -76,7 +76,7 @@ export default function AboutMe() {
                 </Link></span>{" "}
                 and connect with me to collaborate!
               </p>
-            </div>
+            </div> */}
 
             <div className="mt-8">
               <h1 className="text-xl font-semibold text-gray-700 dark:text-gray-200">
