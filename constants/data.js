@@ -195,9 +195,11 @@ const userData = {
     title:
       "",
     description: [
-      `I'm Eric, ready to bring my skills and passion to the dynamic realm of cloud technology. Starting with a love for web development, I ventured into computer engineering.`,
+      `I'm Eric, a versatile IT professional eager to leverage my skills and passion across a broad spectrum of technology roles. My journey began with a deep love for web development, which led me to pursue a degree in computer engineering. Over the years, I've expanded my expertise to encompass not only cloud technology but also IT support and systems administration.`,
 
-      `Now, I'm honing my expertise in the cloud, supported by AWS certifications. Embracing the ever-evolving tech landscape, I find joy in exploring limitless possibilities in the world of cloud computing. Excited to contribute and thrive in this dynamic field!`
+      `Armed with AWS certifications and hands-on experience in diverse IT environments, I thrive on exploring the ever-evolving tech landscape. Whether it's optimizing cloud infrastructure, managing IT support operations, or ensuring the smooth running of enterprise systems, I find joy in solving complex problems and enhancing technology solutions.`,
+
+      `I'm excited to contribute my knowledge and enthusiasm to a dynamic team, helping to drive innovation and efficiency in the IT field. Let's connect and see how we can achieve great things together!`
     ],
     currentProject: " ",
     currentProjectUrl: " ",
