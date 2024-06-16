@@ -253,12 +253,40 @@ const userData = {
   ],
   technologies: [
     {
-      name: `JavaScript`,
-      imgUrl: `https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png`,
+      name: `Amazon Web Services`,
+      imgUrl: `https://profilinator.rishav.dev/skills-assets/amazonwebservices-original-wordmark.svg`
+    },
+    {
+      name: `Terraform`,
+      imgUrl: `https://profilinator.rishav.dev/skills-assets/terraformio-icon.svg`
+    },
+    {
+      name: `Docker`,
+      imgUrl: `https://profilinator.rishav.dev/skills-assets/docker-original-wordmark.svg`
     },
     {
       name: `Python`,
       imgUrl: `https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/python/python.png`
+    },
+    {
+      name: `Linux`,
+      imgUrl: `https://profilinator.rishav.dev/skills-assets/linux-original.svg`
+    },
+    {
+      name: `Git`,
+      imgUrl: `https://profilinator.rishav.dev/skills-assets/git-scm-icon.svg`
+    },
+    {
+      name: `Google Cloud Platform`,
+      imgUrl: `https://profilinator.rishav.dev/skills-assets/google_cloud-icon.svg`
+    },
+    {
+      name: `Azure`,
+      imgUrl: `https://profilinator.rishav.dev/skills-assets/microsoft_azure-icon.svg`
+    },
+    {
+      name: `JavaScript`,
+      imgUrl: `https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png`,
     },
     {
       name: `HTML`,
@@ -269,33 +297,13 @@ const userData = {
       imgUrl: `https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png`
     },
     {
-      name: `Java`,
-      imgUrl: `https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/java/java.png`
-    },
-    {
       name: `Git`,
       imgUrl: `https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/git/git.png`
     },
     {
-      name: `React`,
-      imgUrl: `https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png`
-    },
-    {
       name: `Firebase`,
       imgUrl: `https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/firebase/firebase.png`
-    },
-    {
-      name: `MySQL`,
-      imgUrl: `https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mysql/mysql.png`
-    },
-    {
-      name: `MongoDB`,
-      imgUrl: `https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mongodb/mongodb.png`
-    },
-    {
-      name: `PostgreSQL`,
-      imgUrl: `https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/postgresql/postgresql.png`
-    },
+    }
   ]
 };
 
