@@ -1,7 +1,7 @@
 # Serverless Website - Cloud Resume Challenge
 
 ## Overview
-After passing the AWS Certified Cloud Practitioner exam, I was eager to apply my newfound knowledge. I embarked on the Cloud Challenge, which included a wide range of tasks using various AWS services. This README outlines the steps I took to integrate popular AWS services and complete the challenge, including customizing and deploying my portfolio site.
+Following my AWS Certified Cloud Practitioner certification, I eagerly undertook the Cloud Resume Challenge to apply and expand my AWS skills. This project encompassed a series of tasks leveraging various AWS services to customize and deploy my portfolio site. Below, I detail the steps taken to integrate these services and successfully complete the challenge.
 
 ## Steps
 
