@@ -64,12 +64,12 @@ const userData = {
       title: "Weather Forecast",
       route: "/projects/weather-forecast",
       overview: "",
-      demoUrl: "https://weather-forecast-ericnbello.onrender.com",
+      demoUrl: "http://ec2-44-214-46-118.compute-1.amazonaws.com/",
       githubUrl: "https://github.com/ericnbello/weather",
       imgUrl: "/enhanced-weather-app-screenshot.png",
       description: [``, ``, ``
       ],
-      tags: ["Python", "Django", "Tailwind", "JavaScript", "API"]
+      tags: ["AWS", "Terraform", "Docker", "nginx", "Python", "Django", "Tailwind", "JavaScript", "API"]
     },
     {
       pid: "country-searcher",
