@@ -4,7 +4,7 @@ import userData from "../constants/data";
 
 export default function FavoriteProjects() {
   return (
-    <div className="bg-[#F1F1F1] -mt-40 dark:bg-gray-900">
+    <div className="bg-[#F1F1F1] dark:bg-gray-900">
       <div className="max-w-6xl mx-auto">
         <header className="flex flex-col items-center justify-between pt-12 mx-10 md:flex-row md:pt-40 md:my-20 lg:my-0">
           <h1 className="max-w-lg my-20 text-6xl font-bold text-center text-gray-500 lg:text-9xl md:my-0 dark:text-gray-600">
@@ -33,7 +33,7 @@ export default function FavoriteProjects() {
         </header>
 
         {/* Grid starts here */}
-        <div className="grid gap-8 pb-40 md:grid-cols-3 md:grid-rows-2 lg:-mt-8">
+        <div className="grid gap-8 pb-40 md:grid-cols-3 md:grid-rows-2 lg:-mt-0">
           {/* Single card */}
             <div className="w-full block col-span-3 row-span-1 shadow-2xl max-h-[600px] overflow-hidden">
             <Link

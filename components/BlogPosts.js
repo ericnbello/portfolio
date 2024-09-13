@@ -36,7 +36,7 @@ export default function Articles() {
       </div>
       {/* Grid starts here */}
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto px-10 lg:-mt-10 gap-y-20">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto px-10 lg:-mt-0 gap-y-20">
           {userData.articles.map((post, idx) => (
             <ArticleCard
               key={idx}
