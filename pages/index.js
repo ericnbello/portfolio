@@ -14,9 +14,9 @@ export default function Home() {
       description="Portfolio site built using AWS, Next.js & Tailwind."
     >
       <Hero />
-      {/* <FavoriteProjects /> */}
-      {/* <LatestCode /> */}
-      {/* <BlogPosts /> */}
+      <FavoriteProjects />
+      <LatestCode />
+      <BlogPosts />
     </ContainerBlock>
   );
 }
