@@ -18,7 +18,7 @@ export default function VisitorCounter() {
     }, []);
 
     return (
-        <div className="border-2 outline px-4">
+        <div className="border-1 outline px-4">
             <p>Views: {count}</p>
         </div>
     )
