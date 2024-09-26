@@ -10,8 +10,8 @@ import Articles from "@components/Articles";
 export default function Home() {
   return (
     <ContainerBlock
-      title="Eric Bello Portfolio"
-      description="Portfolio site built using AWS, Next.js & Tailwind."
+      title="Eric Bello | Professional Web Development Services"
+      description="Transform your ideas into stunning websites with custom web development, eCommerce solutions, and responsive designs to help your business grow online."
     >
       <Hero />
       <FavoriteProjects />

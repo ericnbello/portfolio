@@ -4,7 +4,7 @@ import ContainerBlock from '@components/ContainerBlock.js';
 
 export default function resume() {
   return (
-    <ContainerBlock>
+    <ContainerBlock title="Resume | Eric Bello | Professional Web Development Services" description="">
       <Resume />
     </ContainerBlock>
   )

@@ -20,7 +20,7 @@ export default function Contact() {
                 Get in touch, let's talk.
               </h1>
               <p className="font-light text-base text-gray-200 mt-2">
-                Fill in the details and I'll get back to you as soon as I can.
+                Fill in the details and I'll get back to you as soon as possible.
               </p>
             </header>
             <div className="icons-container inline-flex flex-col my-20">
@@ -112,14 +112,18 @@ export default function Contact() {
                   width="24"
                   height="24"
                   className="text-gray-50"
-                  viewBox="0 0 24 24"
+                  // viewBox="0 0 24 24"
+                  viewBox="0 0 512 462.799"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
-                >
+                >            
                   <path
                     fillRule="evenodd"
                     clipRule="evenodd"
-                    d="M8 3C9.10457 3 10 3.89543 10 5V8H16C17.1046 8 18 8.89543 18 10C18 11.1046 17.1046 12 16 12H10V14C10 15.6569 11.3431 17 13 17H16C17.1046 17 18 17.8954 18 19C18 20.1046 17.1046 21 16 21H13C9.13401 21 6 17.866 6 14V5C6 3.89543 6.89543 3 8 3Z"
+                    // {/* X icon */}
+                    d="M403.229 0h78.506L310.219 196.04 512 462.799H354.002L230.261 301.007 88.669 462.799h-78.56l183.455-209.683L0 0h161.999l111.856 147.88L403.229 0zm-27.556 415.805h43.505L138.363 44.527h-46.68l283.99 371.278z" 
+                    // {/* Twitter icon */}
+                    // {/* d="M8 3C9.10457 3 10 3.89543 10 5V8H16C17.1046 8 18 8.89543 18 10C18 11.1046 17.1046 12 16 12H10V14C10 15.6569 11.3431 17 13 17H16C17.1046 17 18 17.8954 18 19C18 20.1046 17.1046 21 16 21H13C9.13401 21 6 17.866 6 14V5C6 3.89543 6.89543 3 8 3Z" */}
                     fill="currentColor"
                   />
                 </svg>

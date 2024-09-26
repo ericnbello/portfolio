@@ -16,4 +16,16 @@ module.exports = {
       loader: 'akamai',
       path: '',
     },
+    async rewrites() {
+      return [
+        {
+          source: "/blog",
+          destination: "https://starter-kit-ten-pearl.vercel.app/blog",
+        },
+        {
+          source: "/blog/:path*",
+          destination: "https://starter-kit-ten-pearl.vercel.app/blog/:path*",
+        },
+      ];
+    },
   }

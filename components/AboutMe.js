@@ -132,6 +132,9 @@ export default function AboutMe() {
 
           {/* Text area */}
           <div className="col-span-1 md:col-span-2">
+          {/* {userData.about.headlines?.map((headline, idy) => (
+              <h2 className="text-xl font-semibold text-gray-700 dark:text-gray-200">{headline}</h2>
+          ))}
             {userData.about.description?.map((desc, idx) => (
               <p
                 key={idx}
@@ -139,8 +142,18 @@ export default function AboutMe() {
               >
                 {desc}
               </p>
-            ))}
+            ))} */}
 
+            {userData.about.headlines?.map((headline, idx) => {
+              return (
+                  <div className="">
+                      <h3 className="text-xl font-bold text-gray-700 mb-4 dark:text-gray-300">    {headline}
+                      </h3>
+                      <p className="text-xl text-gray-700 mb-4 dark:text-gray-300">
+                          {userData.about.description[idx]}
+                      </p>
+                  </div>
+            )})}
             <TechStack />
             <Certifications />
           </div>

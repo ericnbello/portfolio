@@ -68,11 +68,11 @@ const ArticleCard = ({ title, route, imgUrl, number, description, tags }) => {
           <div className="h-72 object-cover">
             <img
               src={imgUrl}
-              alt="portfolio"
-              className="transform hover:scale-125 transition duration-2000 ease-out object-cover h-full w-full"
+              alt="Blog Post Cover Image"
+              className="transform hover:scale-125 transition duration-2000 ease-out object-cover h-full w-full "
             />
           </div>
-          <h1 className="absolute top-10 left-10 text-gray-50 font-bold text-xl bg-red-500 rounded-md px-2">
+          <h1 className="absolute top-10 left-10 text-gray-50 font-bold text-xl bg-blue-500 rounded-md px-2 w-full sm:w-1/2">
             {title}
           </h1>
           <h1 className="absolute bottom-10 left-10 text-gray-50 font-bold text-xl">

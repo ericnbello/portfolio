@@ -1,13 +1,46 @@
 const userData = {
-  homepageDescription: "Welcome to my site! I'm an IT professional dedicated to continuous learning and excellence. Whether navigating AWS, Azure, and Google Cloud, providing IT support, or managing systems, I thrive in the dynamic tech landscape. From architecting scalable solutions to optimizing infrastructure, I'm passionate about leveraging technology to drive success.",
+  homepageDescription: "Welcome to my site! I'm a freelance web developer dedicated to building modern, responsive, and results-driven websites. Whether you need a sleek portfolio, an engaging business site, or a robust e-commerce platform, I’m here to turn your vision into reality. Let's collaborate to create a powerful online presence that drives success for your business.",
+  // I'm an IT professional dedicated to continuous learning and excellence. Whether navigating AWS, Azure, and Google Cloud, providing IT support, or managing systems, I thrive in the dynamic tech landscape. From architecting scalable solutions to optimizing infrastructure, I'm passionate about leveraging technology to drive success.",
   githubUsername: "ericnbello",
   name: "Eric Bello",
-  designation: "Cloud Engineer",
+  designation: "Developer & IT Professional",
   avatarUrl: "/avatar.png",
-  email: "ericnbello@icloud.com",
+  email: "hi@ericnbello.com",
   phone: "",
   address: "Miami, FL",
   articles: [
+    {
+      pid: "5-Essential-Features-Every-Business-Website-Needs",
+      title: "5 Essential Features Every Business Website Needs",
+      route: "/blog/articles/5-Essential-Features-Every-Business-Website-Needs",
+      overview: "Discover the top 5 features your business website needs for success. Learn how responsive design, clear navigation, compelling CTAs, SEO, and fast load times can elevate your online presence.",
+      imgUrl: "/5-Essential-Features-Every-Business-Website-Needs-blog-cover.jpg",
+      description: [
+        {
+          intro: `In today’s digital landscape, a well-crafted website is crucial for business success. It’s not just about aesthetics; functionality and user experience play pivotal roles in attracting and retaining customers. Here are five must-have features for every business website.`,
+          headlines: [
+            `1. Responsive Design`,
+            `2. Clear Navigation`,
+            `3. Compelling Calls to Action (CTAs)`,
+            `4. Search Engine Optimization (SEO)`,
+            `5. Fast Load Times`,
+          ],
+          content: [
+            `A responsive website adapts effortlessly to different screen sizes and devices, whether your visitors are on desktops, tablets, or smartphones. This ensures that no matter how your audience views your site, they have a seamless, optimized experience. In 2024, with over 60% of web traffic coming from mobile devices, neglecting mobile optimization can cost you both users and conversions. A responsive design also helps with search engine rankings, as Google prioritizes mobile-friendly sites.`, 
+            `Clear, well-structured navigation is essential for user satisfaction. Think of your website as a journey: without a clear map, users can get lost. A simple, intuitive menu with properly labeled categories ensures visitors can quickly find what they're looking for. Adding a search function can also be a game-changer, especially for sites with lots of content. Good navigation not only improves user experience but also keeps people on your site longer, reducing bounce rates and leading to higher engagement.`, 
+            `A website without clear calls to action is like a roadmap without destinations. CTAs should prompt visitors to take specific actions, such as signing up for a newsletter, downloading a guide, or making a purchase. Make sure your CTAs are strategically placed throughout your site—on your homepage, blog posts, and product pages. Use contrasting colors to make them stand out and employ action-oriented language like “Get Started,” “Join Now,” or “Buy Today” to motivate clicks.`,
+            `No matter how great your website is, it won’t matter if no one can find it. That’s where SEO comes into play. Optimizing your site with the right keywords, creating high-quality content, and building backlinks help search engines like Google rank your site higher in search results. Additionally, proper use of meta tags, alt text for images, and optimizing for local searches can boost your online visibility, driving organic traffic to your website without having to rely heavily on paid advertising.`,
+            `Page speed is critical for user experience and SEO. Studies show that if a page takes more than 3 seconds to load, 40% of visitors will abandon the site. To optimize load times, reduce image sizes, use lazy loading, and minimize your use of JavaScript. Additionally, leveraging browser caching and enabling content delivery networks (CDNs) can significantly reduce load times. Fast websites not only keep users engaged but are also favored by search engines, further boosting your rankings.`,
+          ],
+          conclusion: [`Integrating these five essential features — responsive design, clear navigation, compelling CTAs, SEO optimization, and fast load times — is crucial for building a high-performing business website. These features not only enhance user experience but also improve your SEO rankings, increase conversions, and set the stage for long-term success.`,
+            `` ],
+          endingBox: ['Need help implementing these strategies? Reach out today to build a site that works for your business.'],
+          tips: [],
+          affiliateLinks: "no",
+        },
+      ],
+      tags: [``]
+    },
     {
       pid: "cloud-challenge",
       title: "Cloud Challenge",
@@ -41,10 +74,14 @@ const userData = {
             `To maintain a consistent deployment process, I used GitHub Actions to set up continuous integration and deployment (CI/CD) for the front and back-end code. Whenever I pushed updates to the website code, SAM template or Python code, GitHub Actions automatically ran. This updated the S3 bucket and deployed the SAM application to AWS, ensuring a streamlined and efficient development workflow. Additionally, I ensured the CloudFront cache was invalidated to reflect the latest changes. It's important to note that I followed best practices and refrained from committing AWS credentials to source control to ensure security.`,
             `Completing the Cloud Resume Challenge was an enriching experience that not only demonstrated my skills in AWS but also expanded my skills in web development, automation, and infrastructure as code. By navigating through certifications, HTML and CSS styling, AWS services, JavaScript/React implementation, database integration, and CI/CD pipelines, I gained a comprehensive understanding of cloud engineering and DevOps practices. This project served as a testament to my ability to deliver professional-grade solutions while leveraging cutting-edge technologies. I am excited to apply my newfound knowledge and skills in future roles as a developer, cloud engineer, or DevOps professional.` 
           ],
+          conclusion: [],
+          // endingBox: [],
+          affiliateLinks: "no",
+          tips: [],
         },
       ],
       tags: [`AWS, S3, CloudFront, DynamoDB, Lambda, API Gateway, SAM CLI, CloudFormation, GitHub Actions`]
-    }
+    },
   ],
   projects: [
     {
@@ -193,13 +230,26 @@ const userData = {
   ],
   about: {
     title:
-      "",
+      "About Eric Bello",
     description: [
-      `I'm Eric, a versatile IT professional eager to leverage my skills and passion across a broad spectrum of technology roles. My journey began with a deep love for web development, which led me to pursue a degree in computer engineering. Over the years, I've expanded my expertise to encompass not only cloud technology but also IT support and systems administration.`,
+      `Welcome to my corner of the web! I’m Eric Bello, a passionate freelance web developer and founder of CodeCraft Web Solutions. With a background in computer engineering and years of hands-on experience, I specialize in crafting custom websites that blend modern design with seamless functionality. I believe that every business deserves a unique digital presence, and I work closely with clients to create tailored solutions that drive results. Whether it’s a sleek portfolio or an e-commerce platform, my mission is to bring your vision to life.`,
+      // `I'm Eric, a versatile IT professional eager to leverage my skills and passion across a broad spectrum of technology roles. My journey began with a deep love for web development, which led me to pursue a degree in computer engineering. Over the years, I've expanded my expertise to encompass not only cloud technology but also IT support and systems administration.`,
 
-      `Armed with AWS certifications and hands-on experience in diverse IT environments, I thrive on exploring the ever-evolving tech landscape. Whether it's optimizing cloud infrastructure, managing IT support operations, or ensuring the smooth running of enterprise systems, I find joy in solving complex problems and enhancing technology solutions.`,
+      `I focus on understanding your business goals and translating them into a website that not only looks great but performs flawlessly. From responsive design to intuitive user experiences, I ensure that your site meets both current web standards and your specific needs. I stay up-to-date with the latest web technologies, so you can be confident your site is built for the future.`,
 
-      `I'm excited to contribute my knowledge and enthusiasm to a dynamic team, helping to drive innovation and efficiency in the IT field. Let's connect and see how we can achieve great things together!`
+      // `Armed with AWS certifications and hands-on experience in diverse IT environments, I thrive on exploring the ever-evolving tech landscape. Whether it's optimizing cloud infrastructure, managing IT support operations, or ensuring the smooth running of enterprise systems, I find joy in solving complex problems and enhancing technology solutions.`,
+      `Personalized Solutions: I take the time to understand your unique vision and tailor my approach to meet your specific goals.
+      Detail-Oriented: Every project is a commitment to quality and attention to detail, ensuring your site stands out from the competition.
+      Client-Focused: Open communication and collaboration are at the heart of my process, ensuring that we’re always aligned from start to finish.`,
+
+      `Whether you're starting from scratch or looking to enhance an existing website, I’m here to help. Together, we’ll create a digital solution that elevates your brand and connects you with your audience.`,
+      // `I'm excited to contribute my knowledge and enthusiasm to a dynamic team, helping to drive innovation and efficiency in the IT field. Let's connect and see how we can achieve great things together!`
+    ],
+    headlines: [
+      ``,
+      `My Approach`,
+      `Why Work with Me?`,
+      `Let’s Build Together`,
     ],
     currentProject: " ",
     currentProjectUrl: " ",
@@ -224,7 +274,7 @@ const userData = {
     "/resume",
   socialLinks: {
     instagram: "",
-    twitter: "https://twitter.com/ericnbello",
+    twitter: "https://x.com/ericnbello",
     linkedin: "https://linkedin.com/in/ericnbello",
     github: "https://github.com/ericnbello",
     facebook: "",
