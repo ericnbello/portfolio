@@ -52,10 +52,10 @@ export default function Articles() {
             />
           ))}
         </div>
-        <div className="flex justify-center">
+        {/* <div className="flex justify-center">
           <button className="font-bold" onClick={() => setPageIndex(pageIndex - 1)}>Previous</button>
           <button className="font-bold" onClick={() => setPageIndex(pageIndex + 1)}>Next</button>
-        </div>
+        </div> */}
       </div>
     </section>
   );
