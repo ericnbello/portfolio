@@ -278,6 +278,7 @@ const userData = {
     linkedin: "https://linkedin.com/in/ericnbello",
     github: "https://github.com/ericnbello",
     facebook: "",
+    linktree: "https://linktr.ee/ericnbello"
   },
   certifications: [
     {

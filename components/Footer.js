@@ -2,6 +2,7 @@ import React from "react";
 import userData from "@constants/data";
 import Github from "./icons/Github";
 import LinkedIn from "./icons/LinkedIn"
+import Linktree from "./icons/Linktree";
 import Nextjs from "./icons/Nextjs";
 import Image from 'next/image'
 import VisitorCounter from "./VisitorCounter";
@@ -67,6 +68,12 @@ export default function Footer() {
             >
               <LinkedIn />
             </a>
+            <a
+            href={userData.socialLinks.linktree}
+            className="text-base font-normal text-gray-600 dark:text-gray-300"
+          >
+            <Linktree />
+          </a>
           </div>
           <div className="flex flex-row justify-center items-center md:justify-end">
             <VisitorCounter />
