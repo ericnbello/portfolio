@@ -60,7 +60,7 @@ const ArticlePage = () => {
 
                     {/* Text area */}
                     <div className="col-span-1 md:col-span-2">
-                        <img src={article.imgUrl} alt="article cover photo"> </img>
+                        {/* <img src={article.imgUrl} alt="article cover photo"> </img> */}
                         <p className="text-xl text-gray-700 mb-4 dark:text-gray-300">{article.description[0].intro}</p>
                         <div>
                             {
