@@ -9,7 +9,7 @@ import { useForm, ValidationError } from "@formspree/react";
 
 const Contact = () => {
 
-  const [state, handleSubmit] = useForm("xovaoakv");
+  const [state, handleSubmit] = useForm("mayvjonp");
   if (state.succeeded) {
       return <><section className="bg-white dark:bg-gray-800">
       <div className="max-w-6xl mx-auto h-48 bg-white dark:bg-gray-800">
