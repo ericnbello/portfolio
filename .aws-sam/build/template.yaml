@@ -34,7 +34,7 @@ Resources:
     Properties:
       Cors:
         AllowMethods: '''GET'''
-        AllowOrigin: '''www.ericnbello.com'''
+        AllowOrigin: '''https://www.ericnbello.com'''
       OpenApiVersion: 3.0.1
       StageName: Prod
   CounterTable4:

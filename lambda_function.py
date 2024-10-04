@@ -51,7 +51,7 @@ def lambda_handler(event, context):
     return {      
         'statusCode': 200,
         'headers': {
-            'Access-Control-Allow-Origin': 'www.ericnbello.com',
+            'Access-Control-Allow-Origin': 'https://www.ericnbello.com',
             'Access-Control-Allow-Headers': 'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token',
             'Access-Control-Allow-Credentials': 'true',
             'Content-Type': 'application/json'
