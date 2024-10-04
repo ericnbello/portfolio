@@ -1,12 +1,9 @@
 version = 0.1
-[default]
-[default.deploy]
 [default.deploy.parameters]
-stack_name = "sam-portfolio"
-s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-1t3ynb1jfs5u3"
-s3_prefix = "sam-portfolio"
+stack_name = "sam-portfolio-2"
+resolve_s3 = true
+s3_prefix = "sam-portfolio-2"
 region = "us-east-1"
-confirm_changeset = true
 capabilities = "CAPABILITY_IAM"
 disable_rollback = true
 image_repositories = []

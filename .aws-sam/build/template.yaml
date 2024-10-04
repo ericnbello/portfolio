@@ -6,18 +6,18 @@ Globals:
     Runtime: python3.9
     MemorySize: 128
 Resources:
-  ResumeFunction:
+  ResumeFunction2:
     Type: AWS::Serverless::Function
     Properties:
-      FunctionName: ResumeFunction
-      CodeUri: ./
+      FunctionName: ResumeFunction2
+      CodeUri: ResumeFunction2
       Handler: lambda_function.lambda_handler
       Description: Backend for site view counter
       Timeout: 3
       Policies:
       - DynamoDBCrudPolicy:
           TableName:
-            Ref: CounterTable2
+            Ref: CounterTable4
       - AmazonDynamoDBFullAccess
       Events:
         ResumeViews:
@@ -28,17 +28,17 @@ Resources:
             Path: /counter
             Method: get
     Metadata:
-      SamResourceId: ResumeFunction
+      SamResourceId: ResumeFunction2
   ResumeViewCountApi:
     Type: AWS::Serverless::Api
     Properties:
       Cors:
         AllowMethods: '''GET'''
-        AllowOrigin: '''ericnbello.com'''
+        AllowOrigin: '''www.ericnbello.com'''
       EndpointConfiguration: Regional
       OpenApiVersion: 3.0.1
       StageName: Prod
-  CounterTable2:
+  CounterTable4:
     Type: AWS::DynamoDB::Table
     Properties:
       AttributeDefinitions:
@@ -48,4 +48,4 @@ Resources:
       KeySchema:
       - AttributeName: siteviews
         KeyType: HASH
-      TableName: countertable2
+      TableName: countertable4
