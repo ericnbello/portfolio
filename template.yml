@@ -38,7 +38,7 @@ Resources:
       Cors:
         AllowMethods: "'GET'"
         AllowOrigin: "'www.ericnbello.com'"
-      EndpointConfiguration: Regional
+      # EndpointConfiguration: Regional
       OpenApiVersion: 3.0.1
       StageName: Prod
       
