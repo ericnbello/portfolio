@@ -75,9 +75,9 @@ export default function Footer() {
             <Linktree />
           </a>
           </div>
-          {/* <div className="flex flex-row justify-center items-center md:justify-end">
+          <div className="flex flex-row justify-center items-center md:justify-end">
             <VisitorCounter />
-          </div> */}
+          </div>
         </div>
       </div>
     </div>
