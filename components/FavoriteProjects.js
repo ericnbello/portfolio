@@ -33,7 +33,7 @@ export default function FavoriteProjects() {
         </header>
 
         {/* Grid starts here */}
-        <div className="grid gap-8 pb-40 md:grid-cols-3 md:grid-rows-2 lg:-mt-0">
+        <div className="grid gap-8 md:grid-cols-3 md:grid-rows-2 lg:-mt-0 pb-40">
           {/* Single card */}
             <div className="w-full block col-span-3 row-span-1 shadow-2xl max-h-[600px] overflow-hidden">
             <Link
@@ -103,7 +103,7 @@ export default function FavoriteProjects() {
           </div>
 
           {/* Single card */}
-          {/* <div className="block w-full col-span-3 sm:flex sm:flex-col sm:justify-between sm:col-span-1 sm:row-span-1">
+          {/* <div className="block object-cover w-full col-span-3 sm:col-span-1 sm:row-span-1">
           <Link
             href={userData.projects[3].route}            
             // className="block object-cover w-full col-span-1 md:col-span-3 sm:flex sm:flex-col sm:justify-between"
@@ -124,8 +124,8 @@ export default function FavoriteProjects() {
               </h1>
             </div> */}
             {/* <p>{userData.projects[3].description}</p> */}
-          {/* </Link> */}
-        {/* </div> */}
+          {/* </Link>
+        </div> */}
         </div>
       </div>
     </div>
