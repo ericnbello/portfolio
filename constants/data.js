@@ -103,7 +103,7 @@ const userData = {
       overview: "",
       demoUrl: "http://ec2-44-214-46-118.compute-1.amazonaws.com/",
       githubUrl: "https://github.com/ericnbello/weather",
-      imgUrl: "/enhanced-weather-app-screenshot.png",
+      imgUrl: "/portfolio/enhanced-weather-app-screenshot.png",
       description: [``, ``, ``
       ],
       tags: ["AWS", "Terraform", "Docker", "nginx", "Python", "Django", "Tailwind", "JavaScript", "API"]
@@ -115,7 +115,7 @@ const userData = {
       overview: "",
       demoUrl: 'https://country-searcher-ericnbello.netlify.app/',
       githubUrl: "https://github.com/ericnbello/country-searcher",
-      imgUrl: '/country-searcher-screenshot.png',
+      imgUrl: '/portfolio/country-searcher-screenshot.png',
       description: [``, ``, ``
       ],
       tags: ["React", "Tailwind", "API"]
@@ -127,7 +127,7 @@ const userData = {
       overview: "",
       demoUrl: "https://www.cloud.ericnbello.com",
       githubUrl: "https://github.com/ericnbello/cloud-resume",
-      imgUrl: "/serverless-website.png",
+      imgUrl: "/portfolio/serverless-website.png",
       description: [``, ``, ``
       ],
       tags: ['AWS', 'Next.js', 'Tailwind', 'Python']
@@ -139,7 +139,7 @@ const userData = {
       overview: "",
       demoUrl: "https://spa-reservations.onrender.com",
       githubUrl: "https://github.com/ericnbello/spa-reservations",
-      imgUrl: "/spa-reservations-screenshot.png",
+      imgUrl: "/portfolio/spa-reservations-screenshot.png",
       description: [``, ``, ``
       ],
       tags: ["Java", "Spring Boot", "Tailwind", "Thymeleaf"]
@@ -150,7 +150,7 @@ const userData = {
       route: "/projects/coffeeroasters-subscription",
       overview: "",
       demoUrl: "https://coffeeroasters-subscription.vercel.app/",githubUrl: "",
-      imgUrl: "/coffeeroasters-subscription-screenshot-mockup.png",
+      imgUrl: "/portfolio/coffeeroasters-subscription-screenshot-mockup.png",
       description: [``, ``, ``
       ],
       tags: ['Next.js, Tailwind, Supabase, Stripe']
@@ -162,7 +162,7 @@ const userData = {
       overview: "",
       demoUrl: "https://d35spakm21gfpt.cloudfront.net",
       githubUrl: "https://github.com/ericnbello/arch-studio-multipage",
-      imgUrl: "/arch-studio-screenshot.png",
+      imgUrl: "/portfolio/arch-studio-screenshot.png",
       description: [``, ``, ``
       ],
       tags: ['AWS, Next.js, Tailwind']
@@ -174,7 +174,7 @@ const userData = {
       overview: "",
       demoUrl: "https://planet-facts-ericnbello.netlify.app/",
       githubUrl: "https://github.com/ericnbello/planet-facts",
-      imgUrl: "/planet-facts-screenshot.png",
+      imgUrl: "/portfolio/planet-facts-screenshot.png",
       description: [``, ``, ``
       ],
       tags: ['React, Tailwind, React Router']
@@ -186,7 +186,7 @@ const userData = {
       overview: "",
       demoUrl: "https://etch-a-sketch-ericnbello.netlify.app/",
       githubUrl: "https://github.com/ericnbello/etch-a-sketch",
-      imgUrl: "/etch-a-sketch-screenshot-mockup2.png",
+      imgUrl: "/portfolio/etch-a-sketch-screenshot-mockup2.png",
       description: [``, ``, ``
       ],
       tags: ['HTML, CSS, JavaScript']
@@ -198,7 +198,7 @@ const userData = {
       overview: "",
       demoUrl: "https://manage-landing-page-ericnbello.netlify.app",
       githubUrl: "https://github.com/ericnbello/manage-landing-page",
-      imgUrl: "/manage-landing-page-preview-mockup.png",
+      imgUrl: "/portfolio/manage-landing-page-preview-mockup.png",
       description: [``, ``, ``
       ],
       tags: ['HTML, Tailwind, JavaScript']
@@ -210,7 +210,7 @@ const userData = {
       overview: "",
       demoUrl: "https://calculator-app-ericnbello.netlify.app",
       githubUrl: "https://github.com/ericnbello/calculator",
-      imgUrl: "/calculator-screenshot-mockup.png",
+      imgUrl: "/portfolio/calculator-screenshot-mockup.png",
       description: [``, ``, ``
       ],
       tags: ['React, Tailwind']
@@ -222,7 +222,7 @@ const userData = {
       overview: "",
       demoUrl: '/projects',
       githubUrl: "https://github.com/ericnbello/fylo-landing-page",
-      imgUrl: '/fylo-landing-page-screenshot-mockup.png',
+      imgUrl: '/portfolio/fylo-landing-page-screenshot-mockup.png',
       description: [``, ``, ``
       ],
       tags: ['Next.js, Tailwind']
@@ -283,22 +283,22 @@ const userData = {
   certifications: [
     {
       name: `AWS Certified Cloud Practitioner`,
-      imgUrl: `/aws-certified-cloud-practitioner.png`,
+      imgUrl: `/portfolio/aws-certified-cloud-practitioner.png`,
       link: `https://www.credly.com/badges/622e55f4-6f8c-405f-a821-7174736de80c/public_url`
     },
     {
       name: `CompTIA Network+`,
-      imgUrl: `/comptia-network-ce-certification.1.png`,
+      imgUrl: `/portfolio/comptia-network-ce-certification.1.png`,
       link: `https://www.credly.com/badges/1b0b8be2-c9e8-444b-a5f5-4889f09b4b69/public_url`
     },
     {
       name: `CompTIA Security+`,
-      imgUrl: `/comptia-security-ce-certification.png`,
+      imgUrl: `/portfolio/comptia-security-ce-certification.png`,
       link: `https://www.credly.com/badges/736c7aab-22fd-4689-8faf-5c1ed4c6f972/public_url`
     },
     {
       name: `CompTIA CySA+`,
-      imgUrl: `/comptia-cysa-ce-certification.png`,
+      imgUrl: `/portfolio/comptia-cysa-ce-certification.png`,
       link: `https://www.credly.com/badges/bd9f6d71-2c3f-47a7-826b-90983067f698/public_url`
     }
   ],
