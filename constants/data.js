@@ -4,7 +4,7 @@ const userData = {
   githubUsername: "ericnbello",
   name: "Eric Bello",
   designation: "Developer & IT Professional",
-  avatarUrl: "avatar.png",
+  avatarUrl: "/portfolio/avatar.png",
   email: "hi@ericnbello.com",
   phone: "",
   address: "Miami, FL",
@@ -91,7 +91,7 @@ const userData = {
       overview: "",
       demoUrl: "https://streaming-web-app.firebaseapp.com/",
       githubUrl: "https://github.com/ericnbello/entertainment-web-app",
-      imgUrl: "entertainment-web-app-screenshot.png",
+      imgUrl: "/portfolio/entertainment-web-app-screenshot.png",
       description: [``, ``, ``
       ],
       tags: ['React', 'Tailwind', 'Firebase', 'React Router', ]
