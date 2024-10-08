@@ -4,7 +4,7 @@ const userData = {
   githubUsername: "ericnbello",
   name: "Eric Bello",
   designation: "Developer & IT Professional",
-  avatarUrl: "/portfolio/avatar.png",
+  avatarUrl: "/avatar.png",
   email: "hi@ericnbello.com",
   phone: "",
   address: "Miami, FL",
@@ -41,47 +41,47 @@ const userData = {
       ],
       tags: [``]
     },
-    {
-      pid: "cloud-challenge",
-      title: "Cloud Challenge",
-      route: "/blog/articles/cloud-challenge",
-      overview: "This challenge was taken from cloudresumechallenge.dev which required applying knowledge of various AWS services into practical hands-on experience to deploy a serverless website.",
-      imgUrl: "/cloud-challege-blog-cover.jpeg",
-      description: [
-        {
-          intro: `After passing the AWS Certified Cloud Practitioner exam, I was ready to apply the knowledge I had learned to some practical experience. Researching cloud projects online led me to the Cloud Challenge, which encompassed a wide range of tasks using various AWS services. I began by customizing my portfolio site (which is built with Next.js and Tailwind) and getting it deployed without using "easier" deployment sites like Netlify or Heroku. The following steps outline how I was able to integrate popular AWS services and complete the challenge.`,
-          headlines: [
-            `1. Deploy online as an Amazon S3 static website`,
-            `2. AWS CloudFront for HTTPS`,
-            `3. DNS and using custom domain`,
-            `4. Visitor Counter - JavaScript`,
-            `5. DynamoDB Database to Store Count Value`,
-            `6. Python Lambda function and API Gateway`,
-            `7. Infrastructure as Code (IaC) - CloudFormation with SAM CLI`,
-            `8. Source Control with Git`,
-            `9. CI/CD with GitHub Actions for Front and Back End`,
-            `Final Thoughts`
-          ],
-          content: [
-            `The S3 service makes it easy to deploy and host a static site (like this one created with React) with "buckets" or folders containing the site source code. First, I created a publicly accessible S3 bucket that will provide the HTML and CSS resources and images necessary for the site and configured the appropriate website endpoint for my default region (us-east-1).`, 
-            `Since sites hosted with S3 don't come with SSL/TLS security certificates by default, it’s necessary to make use of the CloudFront CDN service to enable HTTPS traffic for the website. Both services seamlessly integrated with by linking my S3 endpoint as the origin to the CloudFront distribution, giving me a secure domain name.`, 
-            `Although the domain given by CloudFront (https://d2lcr9xcxsvqk7.cloudfront.net) had a certificate, I wanted to use my own custom one (ericnbello.com) to access the site. While AWS offers its own DNS service called Route 53, I’ve already been more than familiar with editing DNS records for other domains so I chose to remain with the original provider I registered this one with (Google). I edited the domain’s DNS entries to point to the CloudFront distribution and verify ownership, and was able to receive a custom SSL certificate from CloudFront and my site was up and running at the address you’re currently on.`,
-            `Being built in Next.js, the website already had plenty of JavaScript. So my approach here was to create a simple VisitorCounter component and render it in the footer of each page. I didn’t get fancy, so a slim border to create a box around the view count was sufficient.`,
-            `The visitor counter needed a database to store and update the visitor count value. Amazon's DynamoDB, a NoSQL database service, perfectly suited this requirement. Being on the AWS Free Tier pricing, I opted for on-demand pricing to have zero cost right now while also ensuring minimal ongoing costs for this project once the initial year of the free tier ends. I created a table with a partition key and an attribute name of Quantity whose initial value of 0 would be updated.`,
-            `Next up was getting the component on the site to communicate with the DynamoDB database. Amazon's API Gateway and Lambda services worked hand in hand to achieve this, ensuring smooth interaction between my site and database. Since I enjoy the simplicity of Python syntax, I decided to use it for the Lambda function along with the boto3 library which was recommended for the challenge. For this part, I relied heavily on the AWS documentation for working with DynamoDB and updating table values. When the function was completed, I had a functional API to work with in the API Gateway and I was able to start handling requests from the web app after resolving some CORS issues that came up.`,
-            `In order to avoid manual configuration within the AWS console (which is easy to do incorrectly!), I defined the necessary resources, including DynamoDB, API Gateway, and Lambda function, using an AWS Serverless Application Model (SAM) template. It uses CloudFormation to deploy the resources, which I really enjoyed learning about more in depth. The AWS SAM CLI facilitated smooth deployment from inside my VSCode terminal.`,
-            `To ensure seamless updates and eliminate manual intervention, I employed source control for both the back-end API and front-end website in a GitHub repository.`,
-            `To maintain a consistent deployment process, I used GitHub Actions to set up continuous integration and deployment (CI/CD) for the front and back-end code. Whenever I pushed updates to the website code, SAM template or Python code, GitHub Actions automatically ran. This updated the S3 bucket and deployed the SAM application to AWS, ensuring a streamlined and efficient development workflow. Additionally, I ensured the CloudFront cache was invalidated to reflect the latest changes. It's important to note that I followed best practices and refrained from committing AWS credentials to source control to ensure security.`,
-            `Completing the Cloud Resume Challenge was an enriching experience that not only demonstrated my skills in AWS but also expanded my skills in web development, automation, and infrastructure as code. By navigating through certifications, HTML and CSS styling, AWS services, JavaScript/React implementation, database integration, and CI/CD pipelines, I gained a comprehensive understanding of cloud engineering and DevOps practices. This project served as a testament to my ability to deliver professional-grade solutions while leveraging cutting-edge technologies. I am excited to apply my newfound knowledge and skills in future roles as a developer, cloud engineer, or DevOps professional.` 
-          ],
-          conclusion: [],
-          // endingBox: [],
-          affiliateLinks: "no",
-          tips: [],
-        },
-      ],
-      tags: [`AWS, S3, CloudFront, DynamoDB, Lambda, API Gateway, SAM CLI, CloudFormation, GitHub Actions`]
-    },
+    // {
+    //   pid: "cloud-challenge",
+    //   title: "Cloud Challenge",
+    //   route: "/blog/articles/cloud-challenge",
+    //   overview: "This challenge was taken from cloudresumechallenge.dev which required applying knowledge of various AWS services into practical hands-on experience to deploy a serverless website.",
+    //   imgUrl: "/cloud-challege-blog-cover.jpeg",
+    //   description: [
+    //     {
+    //       intro: `After passing the AWS Certified Cloud Practitioner exam, I was ready to apply the knowledge I had learned to some practical experience. Researching cloud projects online led me to the Cloud Challenge, which encompassed a wide range of tasks using various AWS services. I began by customizing my portfolio site (which is built with Next.js and Tailwind) and getting it deployed without using "easier" deployment sites like Netlify or Heroku. The following steps outline how I was able to integrate popular AWS services and complete the challenge.`,
+    //       headlines: [
+    //         `1. Deploy online as an Amazon S3 static website`,
+    //         `2. AWS CloudFront for HTTPS`,
+    //         `3. DNS and using custom domain`,
+    //         `4. Visitor Counter - JavaScript`,
+    //         `5. DynamoDB Database to Store Count Value`,
+    //         `6. Python Lambda function and API Gateway`,
+    //         `7. Infrastructure as Code (IaC) - CloudFormation with SAM CLI`,
+    //         `8. Source Control with Git`,
+    //         `9. CI/CD with GitHub Actions for Front and Back End`,
+    //         `Final Thoughts`
+    //       ],
+    //       content: [
+    //         `The S3 service makes it easy to deploy and host a static site (like this one created with React) with "buckets" or folders containing the site source code. First, I created a publicly accessible S3 bucket that will provide the HTML and CSS resources and images necessary for the site and configured the appropriate website endpoint for my default region (us-east-1).`, 
+    //         `Since sites hosted with S3 don't come with SSL/TLS security certificates by default, it’s necessary to make use of the CloudFront CDN service to enable HTTPS traffic for the website. Both services seamlessly integrated with by linking my S3 endpoint as the origin to the CloudFront distribution, giving me a secure domain name.`, 
+    //         `Although the domain given by CloudFront (https://d2lcr9xcxsvqk7.cloudfront.net) had a certificate, I wanted to use my own custom one (ericnbello.com) to access the site. While AWS offers its own DNS service called Route 53, I’ve already been more than familiar with editing DNS records for other domains so I chose to remain with the original provider I registered this one with (Google). I edited the domain’s DNS entries to point to the CloudFront distribution and verify ownership, and was able to receive a custom SSL certificate from CloudFront and my site was up and running at the address you’re currently on.`,
+    //         `Being built in Next.js, the website already had plenty of JavaScript. So my approach here was to create a simple VisitorCounter component and render it in the footer of each page. I didn’t get fancy, so a slim border to create a box around the view count was sufficient.`,
+    //         `The visitor counter needed a database to store and update the visitor count value. Amazon's DynamoDB, a NoSQL database service, perfectly suited this requirement. Being on the AWS Free Tier pricing, I opted for on-demand pricing to have zero cost right now while also ensuring minimal ongoing costs for this project once the initial year of the free tier ends. I created a table with a partition key and an attribute name of Quantity whose initial value of 0 would be updated.`,
+    //         `Next up was getting the component on the site to communicate with the DynamoDB database. Amazon's API Gateway and Lambda services worked hand in hand to achieve this, ensuring smooth interaction between my site and database. Since I enjoy the simplicity of Python syntax, I decided to use it for the Lambda function along with the boto3 library which was recommended for the challenge. For this part, I relied heavily on the AWS documentation for working with DynamoDB and updating table values. When the function was completed, I had a functional API to work with in the API Gateway and I was able to start handling requests from the web app after resolving some CORS issues that came up.`,
+    //         `In order to avoid manual configuration within the AWS console (which is easy to do incorrectly!), I defined the necessary resources, including DynamoDB, API Gateway, and Lambda function, using an AWS Serverless Application Model (SAM) template. It uses CloudFormation to deploy the resources, which I really enjoyed learning about more in depth. The AWS SAM CLI facilitated smooth deployment from inside my VSCode terminal.`,
+    //         `To ensure seamless updates and eliminate manual intervention, I employed source control for both the back-end API and front-end website in a GitHub repository.`,
+    //         `To maintain a consistent deployment process, I used GitHub Actions to set up continuous integration and deployment (CI/CD) for the front and back-end code. Whenever I pushed updates to the website code, SAM template or Python code, GitHub Actions automatically ran. This updated the S3 bucket and deployed the SAM application to AWS, ensuring a streamlined and efficient development workflow. Additionally, I ensured the CloudFront cache was invalidated to reflect the latest changes. It's important to note that I followed best practices and refrained from committing AWS credentials to source control to ensure security.`,
+    //         `Completing the Cloud Resume Challenge was an enriching experience that not only demonstrated my skills in AWS but also expanded my skills in web development, automation, and infrastructure as code. By navigating through certifications, HTML and CSS styling, AWS services, JavaScript/React implementation, database integration, and CI/CD pipelines, I gained a comprehensive understanding of cloud engineering and DevOps practices. This project served as a testament to my ability to deliver professional-grade solutions while leveraging cutting-edge technologies. I am excited to apply my newfound knowledge and skills in future roles as a developer, cloud engineer, or DevOps professional.` 
+    //       ],
+    //       conclusion: [],
+    //       // endingBox: [],
+    //       affiliateLinks: "no",
+    //       tips: [],
+    //     },
+    //   ],
+    //   tags: [`AWS, S3, CloudFront, DynamoDB, Lambda, API Gateway, SAM CLI, CloudFormation, GitHub Actions`]
+    // },
   ],
   projects: [
     {
@@ -91,7 +91,7 @@ const userData = {
       overview: "",
       demoUrl: "https://streaming-web-app.firebaseapp.com/",
       githubUrl: "https://github.com/ericnbello/entertainment-web-app",
-      imgUrl: "/portfolio/entertainment-web-app-screenshot.png",
+      imgUrl: "/entertainment-web-app-screenshot.png",
       description: [``, ``, ``
       ],
       tags: ['React', 'Tailwind', 'Firebase', 'React Router', ]
@@ -103,7 +103,7 @@ const userData = {
       overview: "",
       demoUrl: "http://ec2-44-214-46-118.compute-1.amazonaws.com/",
       githubUrl: "https://github.com/ericnbello/weather",
-      imgUrl: "/portfolio/enhanced-weather-app-screenshot.png",
+      imgUrl: "/enhanced-weather-app-screenshot.png",
       description: [``, ``, ``
       ],
       tags: ["AWS", "Terraform", "Docker", "nginx", "Python", "Django", "Tailwind", "JavaScript", "API"]
@@ -115,7 +115,7 @@ const userData = {
       overview: "",
       demoUrl: 'https://country-searcher-ericnbello.netlify.app/',
       githubUrl: "https://github.com/ericnbello/country-searcher",
-      imgUrl: '/portfolio/country-searcher-screenshot.png',
+      imgUrl: '/country-searcher-screenshot.png',
       description: [``, ``, ``
       ],
       tags: ["React", "Tailwind", "API"]
@@ -127,7 +127,7 @@ const userData = {
       overview: "",
       demoUrl: "https://www.cloud.ericnbello.com",
       githubUrl: "https://github.com/ericnbello/cloud-resume",
-      imgUrl: "/portfolio/serverless-website.png",
+      imgUrl: "/serverless-website.png",
       description: [``, ``, ``
       ],
       tags: ['AWS', 'Next.js', 'Tailwind', 'Python']
@@ -139,7 +139,7 @@ const userData = {
       overview: "",
       demoUrl: "https://spa-reservations.onrender.com",
       githubUrl: "https://github.com/ericnbello/spa-reservations",
-      imgUrl: "/portfolio/spa-reservations-screenshot.png",
+      imgUrl: "/spa-reservations-screenshot.png",
       description: [``, ``, ``
       ],
       tags: ["Java", "Spring Boot", "Tailwind", "Thymeleaf"]
@@ -150,7 +150,7 @@ const userData = {
       route: "/projects/coffeeroasters-subscription",
       overview: "",
       demoUrl: "https://coffeeroasters-subscription.vercel.app/",githubUrl: "",
-      imgUrl: "/portfolio/coffeeroasters-subscription-screenshot-mockup.png",
+      imgUrl: "/coffeeroasters-subscription-screenshot-mockup.png",
       description: [``, ``, ``
       ],
       tags: ['Next.js, Tailwind, Supabase, Stripe']
@@ -162,7 +162,7 @@ const userData = {
       overview: "",
       demoUrl: "https://d35spakm21gfpt.cloudfront.net",
       githubUrl: "https://github.com/ericnbello/arch-studio-multipage",
-      imgUrl: "/portfolio/arch-studio-screenshot.png",
+      imgUrl: "/arch-studio-screenshot.png",
       description: [``, ``, ``
       ],
       tags: ['AWS, Next.js, Tailwind']
@@ -174,7 +174,7 @@ const userData = {
       overview: "",
       demoUrl: "https://planet-facts-ericnbello.netlify.app/",
       githubUrl: "https://github.com/ericnbello/planet-facts",
-      imgUrl: "/portfolio/planet-facts-screenshot.png",
+      imgUrl: "/planet-facts-screenshot.png",
       description: [``, ``, ``
       ],
       tags: ['React, Tailwind, React Router']
@@ -186,7 +186,7 @@ const userData = {
       overview: "",
       demoUrl: "https://etch-a-sketch-ericnbello.netlify.app/",
       githubUrl: "https://github.com/ericnbello/etch-a-sketch",
-      imgUrl: "/portfolio/etch-a-sketch-screenshot-mockup2.png",
+      imgUrl: "/etch-a-sketch-screenshot-mockup2.png",
       description: [``, ``, ``
       ],
       tags: ['HTML, CSS, JavaScript']
@@ -198,7 +198,7 @@ const userData = {
       overview: "",
       demoUrl: "https://manage-landing-page-ericnbello.netlify.app",
       githubUrl: "https://github.com/ericnbello/manage-landing-page",
-      imgUrl: "/portfolio/manage-landing-page-preview-mockup.png",
+      imgUrl: "/manage-landing-page-preview-mockup.png",
       description: [``, ``, ``
       ],
       tags: ['HTML, Tailwind, JavaScript']
@@ -210,7 +210,7 @@ const userData = {
       overview: "",
       demoUrl: "https://calculator-app-ericnbello.netlify.app",
       githubUrl: "https://github.com/ericnbello/calculator",
-      imgUrl: "/portfolio/calculator-screenshot-mockup.png",
+      imgUrl: "/calculator-screenshot-mockup.png",
       description: [``, ``, ``
       ],
       tags: ['React, Tailwind']
@@ -222,7 +222,7 @@ const userData = {
       overview: "",
       demoUrl: '/projects',
       githubUrl: "https://github.com/ericnbello/fylo-landing-page",
-      imgUrl: '/portfolio/fylo-landing-page-screenshot-mockup.png',
+      imgUrl: '/fylo-landing-page-screenshot-mockup.png',
       description: [``, ``, ``
       ],
       tags: ['Next.js, Tailwind']
@@ -283,22 +283,22 @@ const userData = {
   certifications: [
     {
       name: `AWS Certified Cloud Practitioner`,
-      imgUrl: `/portfolio/aws-certified-cloud-practitioner.png`,
+      imgUrl: `/aws-certified-cloud-practitioner.png`,
       link: `https://www.credly.com/badges/622e55f4-6f8c-405f-a821-7174736de80c/public_url`
     },
     {
       name: `CompTIA Network+`,
-      imgUrl: `/portfolio/comptia-network-ce-certification.1.png`,
+      imgUrl: `/comptia-network-ce-certification.1.png`,
       link: `https://www.credly.com/badges/1b0b8be2-c9e8-444b-a5f5-4889f09b4b69/public_url`
     },
     {
       name: `CompTIA Security+`,
-      imgUrl: `/portfolio/comptia-security-ce-certification.png`,
+      imgUrl: `/comptia-security-ce-certification.png`,
       link: `https://www.credly.com/badges/736c7aab-22fd-4689-8faf-5c1ed4c6f972/public_url`
     },
     {
       name: `CompTIA CySA+`,
-      imgUrl: `/portfolio/comptia-cysa-ce-certification.png`,
+      imgUrl: `/comptia-cysa-ce-certification.png`,
       link: `https://www.credly.com/badges/bd9f6d71-2c3f-47a7-826b-90983067f698/public_url`
     }
   ],
