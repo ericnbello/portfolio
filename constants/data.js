@@ -8,6 +8,14 @@ const userData = {
   email: "hi@ericnbello.com",
   phone: "",
   address: "Miami, FL",
+  testimonials: [
+    {
+      header: '',
+      description: '',
+      author: '',
+      imgUrl: '/avatar.png'
+    }
+  ],
   articles: [
     {
       pid: "5-Essential-Features-Every-Business-Website-Needs",

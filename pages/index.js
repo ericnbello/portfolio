@@ -6,6 +6,7 @@ import FavoriteProjects from "../components/FavoriteProjects";
 import LatestCode from "../components/LatestCode";
 import BlogPosts from "@components/BlogPosts";
 import Articles from "@components/Articles";
+import Testimonials from "@components/Testimonials";
 
 export default function Home() {
   return (
@@ -15,7 +16,8 @@ export default function Home() {
     >
       <Hero />
       <FavoriteProjects />
-      <LatestCode />
+      {/* <LatestCode /> */}
+      <Testimonials />
       <BlogPosts />
     </ContainerBlock>
   );
