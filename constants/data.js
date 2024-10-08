@@ -3,7 +3,7 @@ const userData = {
   // I'm an IT professional dedicated to continuous learning and excellence. Whether navigating AWS, Azure, and Google Cloud, providing IT support, or managing systems, I thrive in the dynamic tech landscape. From architecting scalable solutions to optimizing infrastructure, I'm passionate about leveraging technology to drive success.",
   githubUsername: "ericnbello",
   name: "Eric Bello",
-  designation: "Developer & IT Professional",
+  designation: "Full Stack Developer",
   avatarUrl: "/avatar.png",
   email: "hi@ericnbello.com",
   phone: "",
