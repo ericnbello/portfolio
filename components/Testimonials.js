@@ -2,6 +2,12 @@ import React, { useState, useSWR } from "react";
 import userData from "@constants/data";
 import Link from "next/link";
 
+const starIcon = (
+    <svg width="18" height="16" viewBox="0 0 18 16" className="fill-current">
+      <path d="M9.09815 0.361679L11.1054 6.06601H17.601L12.3459 9.59149L14.3532 15.2958L9.09815 11.7703L3.84309 15.2958L5.85035 9.59149L0.595291 6.06601H7.0909L9.09815 0.361679Z" />
+    </svg>
+  );
+
 function paginator(items, current_page, per_page_items) {
 	let page = current_page || 1,
 	per_page = per_page_items || 10,
@@ -33,19 +39,20 @@ export default function Testimonials() {
           <h1 className="text-6xl lg:text-9xl max-w-lg font-bold text-gray-500 my-20 md:my-0 dark:text-gray-600 text-center lg:text-left">
             Testimonials
           </h1>
-      </div>
+        </div>
       {/* Grid starts here */}
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto px-10 lg:-mt-0 gap-y-20">
           {userData.testimonials.map((test, idx) => (
-            <TestimonialCard
+            <SingleTestimonial
               key={idx}
               pid={test.idx}
               author={test.author}
               imgUrl={test.imgUrl}
               number={`${idx + 1}`}
-              description={test.description}
-              header={test.header}
+              content={test.content}
+              authorDesignation={test.authorDesignation}
+              star={test.star}
             />
           ))}
         </div>
@@ -58,31 +65,40 @@ export default function Testimonials() {
   );
 }
 
-const TestimonialCard = ({ title, author, imgUrl, number, header, description }) => {
-  const testName = title.replace(/-/g, " "); 
-  const titleCase = (str) => str.replace(/\b\S/g, t => t.toUpperCase());
+const SingleTestimonial = ({ author,  authorDesignation, imgUrl, number, star, content }) => {
+//   const testName = title.replace(/-/g, " "); 
+//   const titleCase = (str) => str.replace(/\b\S/g, t => t.toUpperCase());
+
+let ratingIcons = [];
+for (let index = 0; index < star; index++) {
+  ratingIcons.push(
+    <span key={index} className="text-yellow-500">
+      {starIcon}
+    </span>,
+  );
+}
 
   return (
     <>
-    <div className="blog-post">
-        <h1 className="font-semibold text-xl dark:text-gray-200 text-gray-700">
-          {titleCase(testName)}
+    <div className="blog-post relative experience-card  p-4 rounded-md shadow-xl bg-white dark:bg-gray-800 text-black dark:text-white 00 z-10 mx-4">
+        <h1 className="font-semibold text-xl dark:text-white text-gray-700">
+          {/* {ratingIcons} */}
         </h1>
-        <p className="text-base font-normal my-4 text-gray-500">
-          {header}
-        </p>
-        <p className="text-base font-normal my-4 text-gray-500">
-          {description}
+        <div className="flex items-center mb-5 space-x-1">{ratingIcons}</div>
+        <p className="text-base font-normal my-4 text-gray-500 dark:text-white">
+          {content}
         </p>
 
         <div className="group flex flex-row space-x-2 w-full items-center">
-            <img className="rounded-full" src={imgUrl} />
-            <p>
-                {author}
-                {/* <span className="transform group-hover:translate-x-2 transition duration-300">
-          &rarr;
-        </span> */}
-            </p>
+        <div className="relative mr-4 h-[50px] w-full max-w-[50px] overflow-hidden rounded-full">
+            <img className="rounded-full h-12" src={imgUrl} />
+            </div>
+            <div className="w-full">
+            <h3 className="mb-1 text-lg font-semibold text-dark dark:text-white lg:text-base xl:text-lg">
+              {author}
+            </h3>
+            <p className="text-sm text-body-color">{authorDesignation}</p>
+          </div>
         </div>
       </div>
     </>

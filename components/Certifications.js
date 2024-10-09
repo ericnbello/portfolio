@@ -13,7 +13,7 @@ export default function Certifications() {
                         <a key={idx} href={cert.link}>
                         <img
                             src={cert.imgUrl}
-                            className="h-36 w-36 mx-4 my-4"
+                            className="h-36 w-36 mx-4 my-4 rounded-full"
                         />
                         </a>
                     )

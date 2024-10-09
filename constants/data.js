@@ -10,10 +10,11 @@ const userData = {
   address: "Miami, FL",
   testimonials: [
     {
-      header: '',
-      description: '',
-      author: '',
-      imgUrl: '/avatar.png'
+      content: `You get more than just a website—you get a partner committed to delivering on time, exceeding expectations, and providing ongoing support. I couldn't be happier with the results.`,
+      author: 'Marisa B.',
+      authorDesignation: 'Owner - Solstice Naturals',
+      imgUrl: '/auth-01.png',
+      star: 5,
     }
   ],
   articles: [
@@ -240,7 +241,7 @@ const userData = {
     title:
       "About Eric Bello",
     description: [
-      `Welcome to my corner of the web! I’m Eric Bello, a passionate freelance web developer and founder of CodeCraft Web Solutions. With a background in computer engineering and years of hands-on experience, I specialize in crafting custom websites that blend modern design with seamless functionality. I believe that every business deserves a unique digital presence, and I work closely with clients to create tailored solutions that drive results. Whether it’s a sleek portfolio or an e-commerce platform, my mission is to bring your vision to life.`,
+      `Welcome to my corner of the web! I’m Eric Bello, a passionate freelance full-stack web developer specializing in crafting custom websites that blend modern design with seamless functionality. With a background in computer engineering and years of hands-on experience, I believe that every business deserves a unique digital presence, and I work closely with clients to create tailored solutions that drive results. Whether it’s a sleek portfolio or an e-commerce platform, my mission is to bring your vision to life.`,
       // `I'm Eric, a versatile IT professional eager to leverage my skills and passion across a broad spectrum of technology roles. My journey began with a deep love for web development, which led me to pursue a degree in computer engineering. Over the years, I've expanded my expertise to encompass not only cloud technology but also IT support and systems administration.`,
 
       `I focus on understanding your business goals and translating them into a website that not only looks great but performs flawlessly. From responsive design to intuitive user experiences, I ensure that your site meets both current web standards and your specific needs. I stay up-to-date with the latest web technologies, so you can be confident your site is built for the future.`,
@@ -359,7 +360,229 @@ const userData = {
       name: `Firebase`,
       imgUrl: `https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/firebase/firebase.png`
     }
-  ]
+  ],
+  skillsDesc: `Experienced in frontend and backend development, cloud services, and e-commerce platforms. Skilled with modern frameworks, databases, and DevOps tools for building responsive, scalable applications.`,
+  skills: [
+    {
+      category: "Frontend",
+      tech: [
+        {
+          name: "JavaScript",
+          siteUrl: "",
+        },
+        {
+          name: "HTML",
+          siteUrl: ""
+        },
+        {
+          name: "CSS",
+          siteUrl: ""
+        },
+        {
+          name: "React",
+          siteUrl: "",
+        },
+        {
+          name: "Next.js",
+          siteUrl: "https://nextjs.org"
+        },
+        {
+          name: "Gatsby",
+          siteUrl: ""
+        },
+        {
+          name: "Single-page Applications (SPA)",
+          siteUrl: "",
+        },
+        {
+          name: "Responsive websites",
+          siteUrl: ""
+        },
+        {
+          name: "Tailwind",
+          siteUrl: "htttps://tailwindcss.com"
+        },
+        {
+          name: "Bootstrap",
+          siteUrl: "",
+        },
+        {
+          name: "",
+          siteUrl: ""
+        },
+        {
+          name: "",
+          siteUrl: ""
+        },
+     ],
+    },
+    {
+      category: "Backend",
+      tech: [
+        {
+          name: "Python",
+          siteUrl: "https://python.org"
+        },
+        {
+          name: "Django",
+          siteUrl: "https://www.djangoproject.com"
+        },
+        {
+          name: "Node.js",
+          siteUrl: ""
+        },
+        {
+          name: "PostgreSQL",
+          siteUrl: ""
+        },
+        {
+          name: "MySQL",
+          siteUrl: ""
+        },
+        {
+          name: "MongoDB",
+          siteUrl: ""
+        },
+        {
+          name: "third-party APIs",
+          siteUrl: "",
+        },
+        {
+          name: "",
+          siteUrl: ""
+        },
+        {
+          name: "",
+          siteUrl: ""
+        },
+      ],
+    },
+    {
+      category: "Cloud",
+      tech: [
+        {
+          name: "AWS",
+          siteUrl: "https://aws.amazon.com",
+        },
+        {
+          name: "Azure",
+          siteUrl: "https://azure.com"
+        },
+        {
+          name: "Google Cloud Platform",
+          siteUrl: "https://cloud.google.com"
+        },
+        {
+          name: "Docker",
+          siteUrl: ""
+        },
+        {
+          name: "Terraform",
+          siteUrl: ""
+        },
+        {
+          name: "CI/CD",
+          siteUrl: ""
+        },
+        {
+          name: "GitHub Actions",
+          siteUrl: ""
+        },
+        {
+          name: "Heroku",
+          siteUrl: ""
+        },
+        {
+          name: "Firebase",
+          siteUrl: ""
+        },
+        {
+          name: "",
+          siteUrl: ""
+        },
+        {
+          name: "",
+          siteUrl: ""
+        },
+      ],
+    },
+    {
+      category: "Platforms",
+      tech: [
+        {
+          name: "Shopify",
+          siteUrl: "https://shopify.com"
+        },
+        {
+          name: "Wix",
+          siteUrl: "https://wix.com"
+        },
+        {
+          name: "Squarespace",
+          siteUrl: "https://squarespace.com"
+        },
+        {
+          name: "WordPress",
+          siteUrl: ""
+        },
+        {
+          name: "BigCommerce",
+          siteUrl: ""
+        },
+        {
+          name: "WooCommerce",
+          siteUrl: ""
+        },
+        {
+          name: "Shopify Apps",
+          siteUrl: ""
+        },
+        {
+          name: "Strapi",
+          siteUrl: ""
+        },
+        {
+          name: "",
+          siteUrl: ""
+        },
+        {
+          name: "",
+          siteUrl: ""
+        },
+        {
+          name: "",
+          siteUrl: ""
+        },
+      ],
+    },
+    {
+      category: "Others",
+      tech: [
+        {
+          name: "Git",
+          siteUrl: ""
+        },
+        {
+          name: "Search engine optimization (SEO)",
+          siteUrl: ""
+        },{
+          name: "",
+          siteUrl: ""
+        },
+        {
+          name: "",
+          siteUrl: ""
+        },{
+          name: "",
+          siteUrl: ""
+        },
+        {
+          name: "",
+          siteUrl: ""
+        },
+      ],
+    },
+  ],
 };
 
 export default userData;

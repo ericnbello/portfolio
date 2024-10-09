@@ -3,15 +3,35 @@ import { RoughNotation, RoughNotationGroup } from "react-rough-notation";
 import { RainbowHighlight } from "./RainbowHighlight";
 import userData from "@constants/data";
 
+function hexToRgb(hex) {
+  const bigint = parseInt(hex, 16);
+  const r = (bigint >> 16) & 255;
+  const g = (bigint >> 8) & 255;
+  const b = bigint & 255;
+
+  // return r + "," + g + "," + b;
+  // return [r, g, b].join();
+  return [r, g, b];
+}
+
 export default function Hero() {
   // const colors = ["#F59E0B", "#84CC16", "#10B981", "#3B82F6"];
+  // const colorHex = "#" + ((1 << 24) * Math.random() | 0).toString(16).padStart(6, "0");
+  const colorHex = ((1 << 24) * Math.random() | 0).toString(16).padStart(6, "0");
+  const colorRgb = hexToRgb(colorHex);
+  const rgbRed = colorRgb[0]
+  const rgbAdd = colorRgb[0] + colorRgb[1] + colorRgb[2];
+
   return (
     <div className="flex flex-col-reverse md:flex-row justify-center overflow-hidden py-12 lg:py-24 max-w-8xl mx-auto">
       {/* Text container */}
       <div className="w-full md:w-1/2 mx-auto text-center md:text-left my-auto">
         <p className="text-5xl md:text-8xl font-bold text-gray-700 dark:text-gray-200"><span>Hi, I'm </span>
-          <RoughNotation type="highlight" show={true} color={"#" + ((1 << 24) * Math.random() | 0).toString(16).padStart(6, "0")}>
-            <span> Eric.</span>
+          <RoughNotation type="highlight" show={true} color={"#" + colorHex}>
+            {/* <p>{"#" + ((1 << 24) * Math.random() | 0).toString(16).padStart(6, "0")}</p>
+            <p>{colorRgb}</p>
+            <p>{rgbRed}</p> */}
+            <span className={rgbAdd > (255/2) ? `text-white` : `text-black`}> Eric.</span>
           </RoughNotation>
         </p>
         {/*<RoughNotationGroup show={true}>

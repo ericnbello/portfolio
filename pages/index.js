@@ -5,8 +5,11 @@ import Hero from "../components/Hero";
 import FavoriteProjects from "../components/FavoriteProjects";
 import LatestCode from "../components/LatestCode";
 import BlogPosts from "@components/BlogPosts";
-import Articles from "@components/Articles";
 import Testimonials from "@components/Testimonials";
+import Skills from "@components/Skills";
+import Experience from "@components/Experience";
+import ContactHome from "@components/ContactHome";
+import SkillsHome from "@components/SkillsHome";
 
 export default function Home() {
   return (
@@ -16,9 +19,13 @@ export default function Home() {
     >
       <Hero />
       <FavoriteProjects />
+      {/* <Skills /> */}
+      {/* <Experience /> */}
       {/* <LatestCode /> */}
-      <Testimonials />
+      <SkillsHome />
+      {/* <Testimonials /> */}
       <BlogPosts />
+      <ContactHome />
     </ContainerBlock>
   );
 }

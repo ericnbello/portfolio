@@ -3,12 +3,13 @@
 @tailwind utilities;
 
 @import 'fonts.css';
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Inter var', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
+  font-family: 'Open Sans', 'Inter var', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
     Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 a {
@@ -49,7 +50,7 @@ td.state_title {
 }
 
 .medium-widget-article__clap {
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "Open Sans", "Roboto", Arial, sans-serif;
   font-weight: 700 !important;
   color: #ddd !important;
 }
@@ -66,7 +67,7 @@ g.x-axis text, g.y-axis text {
   font-weight: 600;
   color: #333;
   font-size: 1em;
-  font-family: "Montserrat", "Roboto", "Arial", sans-serif;
+  font-family: "Open Sans", "Montserrat", "Roboto", "Arial", sans-serif;
 }
 
 g.legend text {
@@ -78,7 +79,7 @@ g.legend text {
 /* ======= Base ======= */
 
 .resume-body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Roboto', 'Helvetica Neue', 'Helvetica', 'Calibri', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Open Sans', 'Roboto', 'Helvetica Neue', 'Helvetica', 'Calibri', sans-serif;
   color: #14213d;
   background: #FFFFFF;
   font-size: 15px;

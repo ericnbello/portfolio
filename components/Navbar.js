@@ -115,7 +115,8 @@ export default function Navbar() {
               )}
             </a>
           </Link> */}
-          {/* <Link href="/skills">
+
+          <Link href="/skills">
             <a
               className={`text-base  ${
                 router.asPath === "/skills"
@@ -140,7 +141,8 @@ export default function Navbar() {
                 </svg>
               )}
             </a>
-          </Link> */}
+          </Link>
+
           <Link href="/blog">
             <a
               className={`text-base  ${
@@ -298,6 +300,11 @@ export default function Navbar() {
             Experience
           </a>
         </Link> */}
+        <Link href="/skills">
+          <a className="text-base font-normal text-gray-600 dark:text-gray-300">
+            Skills
+          </a>
+        </Link>
         <Link href="/contact">
           <a className="text-base font-normal text-gray-600 dark:text-gray-300">
             Contact

@@ -19,7 +19,7 @@ export default function Skills() {
             className="leading-loose text-2xl md:text-4xl font-semibold  mx-4"
             style={{ lineHeight: "3rem" }}
           >
-            {userData.about.title}
+            {userData.skillsDesc}
           </p>
         </div>
       </div>
